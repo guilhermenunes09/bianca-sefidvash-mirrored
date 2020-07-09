@@ -1,13 +1,32 @@
+
+html, body {
+  height: 100%;
+  background-color: rebeccapurple;
+  overflow: hidden;
+}
+
+#root > div {
+  height:100%
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.fill-height {
+  min-height: 100vh !important;
+  height:auto !important; /* cross-browser */
+  height: 100%; /* cross-browser */
+}
+
+.vertical-center {
+  display: table-cell;
+  float: none;
+  vertical-align: middle;
+}
+
+h1 {
+  text-transform: uppercase;
 }

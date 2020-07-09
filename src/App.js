@@ -1,24 +1,43 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
 
-function App() {
+import Home from './home/home.js';
+import QuemSomos from './quemsomos/quemsomos.js';
+import Trajetoria from './trajetoria/trajetoria.js';
+import Projeto from './projeto/projeto.js';
+import Forcas from './forcas/forcas.js';
+import Servicos from './servicos/servicos.js';
+import Residencial from './residencial/residencial.js';
+import Interiores from './interiores/interiores.js';
+import Planejados from './planejados/planejados.js';
+import Funcional from './funcional/funcional.js';
+
+
+import Container from 'react-bootstrap/Container';
+import './index.css';
+
+
+const App = () => {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <header className="App-header"></header>
+      <Container fluid className="fill-height" style={{backgroundColor:'#ccc'}}>
+        <Router>
+          <div>
+            <Switch>
+              <Route path="/">
+                <QuemSomos />
+              </Route>
+            </Switch>
+          </div>
+        </Router>
+      </Container>
     </div>
   );
 }
