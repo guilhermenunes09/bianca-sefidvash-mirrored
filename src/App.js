@@ -16,7 +16,9 @@ import Residencial from './residencial/residencial.js';
 import Interiores from './interiores/interiores.js';
 import Planejados from './planejados/planejados.js';
 import Funcional from './funcional/funcional.js';
-
+import Gerenciamento from './gerenciamento/gerenciamento.js';
+import Depoimentos from './depoimentos/depoimentos.js';
+import Fim from './fim/fim.js';
 
 import Container from 'react-bootstrap/Container';
 import './index.css';
@@ -32,7 +34,7 @@ const App = () => {
           <div>
             <Switch>
               <Route path="/">
-                <QuemSomos />
+                <Fim />
               </Route>
             </Switch>
           </div>

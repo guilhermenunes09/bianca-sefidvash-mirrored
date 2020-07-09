@@ -5,7 +5,7 @@ import Col from 'react-bootstrap/Col';
 const Servicos = () => {
     return(
         <React.Fragment>
-            Nossos Serviços
+            <h1>Nossos Serviços</h1>
         </React.Fragment>
     )
 }
