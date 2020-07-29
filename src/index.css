@@ -30,3 +30,8 @@ body {
 h1 {
   text-transform: uppercase;
 }
+
+li {
+  padding-left: .5em;
+  padding-right: .5em;
+}
