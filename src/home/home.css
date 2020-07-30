@@ -1,0 +1,19 @@
+.backgroundImage {
+    background-image: url('../imgs/home_bg.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.verticalHorizontal {
+    display: table-cell;
+    height: 300px;
+    text-align: center;
+    width: 300px;
+    vertical-align: middle;
+}
+
+.content-position {
+    position: absolute;
+    top: 40%;
+    left: 52%;
+}

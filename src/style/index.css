@@ -1,0 +1,68 @@
+
+@font-face {
+  font-family: 'ChaletLondon';
+  src: local('ChaletLondon'), url(./fonts/Chalet-LondonSixty.otf) format('opentype');
+}
+
+@font-face {
+  font-family: 'NovecentoBold';
+  src: local('NovecentoBold'), url(./fonts/NovecentoBold.otf) format('opentype');
+}
+
+@font-face {
+  font-family: 'NovecentoDemi';
+  src: local('NovecentoDemi'), url(./fonts/NovecentoDemiBold.otf) format('opentype');
+}
+
+@font-face {
+  font-family: 'ParisSixty';
+  src: local('ParisSixty'), url(./fonts/Chalet-ParisSixty.otf) format('opentype');
+}
+
+html, body {
+  font-family: ParisSixty, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+#root > div {
+  height:100%
+}
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.show {
+  opacity: 1;
+}
+
+.fill-height {
+  min-height: 100vh !important;
+  height:auto !important; /* cross-browser */
+  height: 100%; /* cross-browser */
+}
+
+.container-fluid {
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+.vertical-center {
+  display: table-cell;
+  float: none;
+  vertical-align: middle;
+}
+
+h1 {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+li {
+  padding-left: .5em;
+  padding-right: .5em;
+}
+

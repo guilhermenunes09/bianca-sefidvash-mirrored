@@ -4,21 +4,25 @@ import Col from 'react-bootstrap/Col';
 
 import GerenciamentoImg from './img/gerenciamento_1.jpg';
 
-//import GerenciamentoImg from './img/funcional_1.jpg';
+import MainText from '../components/mainText.js';
+
+const content = {
+    c1: {
+        title: `Gerenciamento de Projeto`,
+        content: [`DIAGNÓSTICO`, `PLANEJAMENTO`, `CONTROLE FÍSICO-FINANCEIRO`, `HOMOLOGAÇÃO DE FORNECEDORES`,`CONTROLE DE QUALIDADE`]
+    },
+    c2: {
+        title: `Execução de Obra`,
+        content: [`ORÇAMENTO`,`ACOMPANHAMENTO`,`ADMINISTRAÇÃO DA OBRA`,`COMPATIBILIZAÇÃO DE PROJETOS COMPLEMENTARES`,`CONSULTORIA ESPECÍFICA`]
+    }
+}
 
 const Gerenciamento = () => {
     return(
         <React.Fragment>
             <Row style={{height: '50vh'}}>
                 <Col>
-                <h1>Gerenciamento de Projeto</h1>
-                <p>
-                    DIAGNÓSTICO <br />
-                    PLANEJAMENTO <br />
-                    CONTROLE FÍSICO-FINANCEIRO <br />
-                    HOMOLOGAÇÃO DE FORNECEDORES <br />
-                    CONTROLE DE QUALIDADE
-                </p>
+                    <MainText title={content.c1.title} text={content.c1.text} />
                 </Col>
                 <Col>
                     <img className="m-2" height={200} src={GerenciamentoImg} />
@@ -30,14 +34,7 @@ const Gerenciamento = () => {
                     POR ALGUEM 
                 </Col>
                 <Col>
-                <h1>Execução de Obra</h1>
-                <p>
-                    ORÇAMENTO <br />
-                    ACOMPANHAMENTO <br />
-                    ADMINISTRAÇÃO DA OBRA <br />
-                    COMPATIBILIZAÇÃO DE PROJETOS COMPLEMENTARES <br />
-                    CONSULTORIA ESPECÍFICA
-                </p> 
+                    <MainText title={content.c2.title} text={content.c2.text} />
                 </Col>
             </Row>
             

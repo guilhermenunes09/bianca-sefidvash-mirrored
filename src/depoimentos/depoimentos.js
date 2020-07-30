@@ -6,7 +6,7 @@ import Col from 'react-bootstrap/Col';
 const Depoimentos = () => {
     return(
         <React.Fragment>
-           <h1>Depoimento de Clientes</h1>
+           <h1></h1>
            <p>
             ”Excelente profissional com muita criatividade e
             empatia para atender as necessidades dos clientes.”

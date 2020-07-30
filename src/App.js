@@ -22,17 +22,15 @@ import Depoimentos from './depoimentos/depoimentos.js';
 import Fim from './fim/fim.js';
 
 import Container from 'react-bootstrap/Container';
-import './index.css';
 
 
 const App = () => {
 
   return (
-    <div>
+    <>
       <header className="App-header"></header>
-      <Container fluid className="fill-height" style={{backgroundColor:'#ccc'}}>
+      <Container fluid className="fill-height">
         <Router>
-          <div>
             <Menu />
             <Switch>
               <Route exact path="/"><Home /></Route>
@@ -49,10 +47,9 @@ const App = () => {
               <Route path="/depoimentos"><Depoimentos /></Route>
               <Route path="/fim"><Fim /></Route>
             </Switch>
-          </div>
         </Router>
       </Container>
-    </div>
+    </>
   );
 }
 
