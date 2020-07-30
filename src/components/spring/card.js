@@ -20,7 +20,7 @@ const Card = (props) => {
   return (
       <div>
         <animated.div
-        className="card"
+        className="cardAnim"
         onMouseMove={({ clientX: x, clientY: y }) => set({ xys: calc(x, y) })}
         onMouseLeave={() => set({ xys: [0, 0, 1] })}
         style={{ transform: opt.xys.interpolate(trans), backgroundImage: `url(${props.image})` }} >

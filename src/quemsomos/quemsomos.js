@@ -24,7 +24,7 @@ const QuemSomos = () => {
 
     return (
         <React.Fragment>
-            <Row style={{backgroundColor: '#0fffff', height: '100vh'}}>
+            <Row>
                 <Col xs={4} style={style.image}></Col>
                 <Col xs={0} md={6} className="table">
                     <MainText title={content.title} text={content.text} />

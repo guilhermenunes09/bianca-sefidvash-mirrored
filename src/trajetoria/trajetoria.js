@@ -15,7 +15,6 @@ const style = {
         backgroundPosition: 'right'
     },
     trajetoria: {
-        backgroundColor: '#cc00cc',
         padding: '6em',
         display: 'flex',
         justifyContent: 'center',
@@ -38,7 +37,7 @@ const content = {
 const Trajetoria = () => {
     return(
         <React.Fragment>
-            <Row style={{backgroundColor: '#0fffff'}}>
+            <Row>
                 <Col xs={4} style={style.image} />
                 <Col xs={0} md={6} className="table">
                     <MainText title={content.title} text={content.text} />

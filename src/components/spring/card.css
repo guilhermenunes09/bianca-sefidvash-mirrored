@@ -6,7 +6,7 @@
     background: #f0f0f0;
   }
   
-  .card {
+  .cardAnim {
     width: 45ch;
     height: 35ch;
     background: grey;
@@ -19,7 +19,7 @@
     border: 15px solid white;
   }
   
-  .card:hover {
+  .cardAnim:hover {
     box-shadow: 0px 30px 100px -10px rgba(0, 0, 0, 0.4);
   }
   

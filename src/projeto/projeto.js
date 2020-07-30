@@ -2,6 +2,7 @@ import React from 'react';
 
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import Card from 'react-bootstrap/Card';
 
 import ProjetoImage from './img/projeto-10.jpg';
 
@@ -9,7 +10,6 @@ import MainText from '../components/mainText.js';
 
 const style = {
     image: {
-        backgroundColor: '#cc00cc',
         display: 'flex',
         justifyContent: 'flex-end',
         alignItems: 'center',
@@ -28,9 +28,17 @@ const content = {
 const Projeto = () => {
     return(
         <React.Fragment>
-            <Row style={{backgroundColor: '#0fffff', height: '100vh'}}>
+            <Row>
                 <Col>              
-                   <MainText title={content.title} text={content.text} />
+                   <MainText title={content.title} />
+                   { content.text && content.text.map((item, index) => {
+                       console.log("item: " + item);
+                       return(
+                        <Card key={index}>
+                            <Card.Body>{item}</Card.Body>
+                        </Card>
+                       )
+                    })}
                 </Col>
                 <Col style={style.image}>
                     <img src={ProjetoImage} width={410} height={300} />

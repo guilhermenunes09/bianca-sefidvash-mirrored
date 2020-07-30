@@ -32,21 +32,23 @@ const App = () => {
       <Container fluid className="fill-height">
         <Router>
             <Menu />
-            <Switch>
-              <Route exact path="/"><Home /></Route>
-              <Route path="/quemsomos"><QuemSomos /></Route>
-              <Route path="/trajetoria"><Trajetoria /></Route>
-              <Route path="/projeto"><Projeto /></Route>
-              <Route path="/forcas"><Forcas /></Route>
-              <Route path="/servicos"><Servicos /></Route>
-              <Route path="/residencial"><Residencial /></Route>
-              <Route path="/interiores"><Interiores /></Route>
-              <Route path="/planejados"><Planejados /></Route>
-              <Route path="/funcional"><Funcional /></Route>
-              <Route path="/gerenciamento"><Gerenciamento /></Route>
-              <Route path="/depoimentos"><Depoimentos /></Route>
-              <Route path="/fim"><Fim /></Route>
-            </Switch>
+            <div className="container">
+              <Switch>
+                <Route exact path="/"><Home /></Route>
+                <Route path="/quemsomos"><QuemSomos /></Route>
+                <Route path="/trajetoria"><Trajetoria /></Route>
+                <Route path="/projeto"><Projeto /></Route>
+                <Route path="/forcas"><Forcas /></Route>
+                <Route path="/servicos"><Servicos /></Route>
+                <Route path="/residencial"><Residencial /></Route>
+                <Route path="/interiores"><Interiores /></Route>
+                <Route path="/planejados"><Planejados /></Route>
+                <Route path="/funcional"><Funcional /></Route>
+                <Route path="/gerenciamento"><Gerenciamento /></Route>
+                <Route path="/depoimentos"><Depoimentos /></Route>
+                <Route path="/fim"><Fim /></Route>
+              </Switch>
+            </div>
         </Router>
       </Container>
     </>

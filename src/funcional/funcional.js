@@ -20,7 +20,7 @@ const content = {
 const Funcional = () => {
     return(
         <React.Fragment>
-            <Row style={{height: '50vh'}}>
+            <Row>
                 <Col xs={4}>
                     <MainText title={content.title} text={content.text} />
                     <img className="m-2" height={300} src={FuncionalImg1} />
