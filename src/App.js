@@ -20,6 +20,7 @@ import Funcional from './funcional/funcional.js';
 import Gerenciamento from './gerenciamento/gerenciamento.js';
 import Depoimentos from './depoimentos/depoimentos.js';
 import Contato from './contato/contato.js';
+import Footer from './components/footer.js';
 
 import Container from 'react-bootstrap/Container';
 
@@ -50,6 +51,7 @@ const App = () => {
                 <Route path="/contato"><Contato /></Route>
               </Switch>
             </div>
+            <Footer />
         </Router>
       </Container>
     </>

@@ -1,10 +1,4 @@
-#root {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    background: #f0f0f0;
-  }
+
   
   .cardAnim {
     width: 45ch;

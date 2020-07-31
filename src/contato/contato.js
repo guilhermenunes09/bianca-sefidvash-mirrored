@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 
 import './contato.css';
 
@@ -10,6 +10,8 @@ import iconFacebook from './img/iconmonstr-facebook-4.svg';
 import iconInstagram from './img/iconmonstr-instagram-14.svg';
 import iconPhone from "./img/iconmonstr-phone-8.svg";
 
+import { disableBodyScroll, enableBodyScroll, clearAllBodyScrollLocks } from 'body-scroll-lock';
+
 import Logo from "../imgs/logo.png";
 
 const style = {
@@ -20,6 +22,18 @@ const style = {
 }
 
 const Contato = () => {
+
+    let targetElement = null;
+
+    useEffect(()=> {
+        console.log("funfa");
+        targetElement = document.querySelector('#body');
+        disableBodyScroll(targetElement);
+        return () => {
+            enableBodyScroll(targetElement);
+        }
+    });
+
     return(
         <div className="d-flex flex-row-reverse justify-content-center">
             <div className="my-flex-item">
