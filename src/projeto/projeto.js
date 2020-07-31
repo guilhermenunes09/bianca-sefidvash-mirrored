@@ -27,24 +27,24 @@ const content = {
 
 const Projeto = () => {
     return(
-        <React.Fragment>
-            <Row>
-                <Col>              
-                   <MainText title={content.title} />
-                   { content.text && content.text.map((item, index) => {
-                       console.log("item: " + item);
-                       return(
+        <div className="d-flex flex-row justify-content-center">
+            <div className="my-flex-item">
+                <MainText title={content.title} />
+            </div>
+            <div className="my-flex-item">
+                { content.text && content.text.map((item, index) => {
+                    console.log("item: " + item);
+                    return(
                         <Card key={index}>
                             <Card.Body>{item}</Card.Body>
                         </Card>
-                       )
-                    })}
-                </Col>
-                <Col style={style.image}>
-                    <img src={ProjetoImage} width={410} height={300} />
-                </Col>
-            </Row>
-        </React.Fragment>
+                    )
+                })}
+            </div>
+            <div className="my-flex-item">
+                <img className="img-fluid" src={ProjetoImage} width={410} height={300} />
+            </div>
+        </div>
     );
 }
 

@@ -3,13 +3,15 @@ import React from 'react';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
-import QuemSomosImage from './img/quemsomos_1.jpg';
+import QuemSomosImg from './img/quemsomos-1-02.png';
 import MainText from '../components/mainText.js';
+
+import './quemsomos.css';
 
 const style = {
     image: {
+        height: '100vh',
         backgroundColor: '#cc000c',
-        backgroundImage: `url(${QuemSomosImage})`,
         backgroundSize: 'cover',
     }
 }
@@ -23,14 +25,14 @@ const content = {
 const QuemSomos = () => {
 
     return (
-        <React.Fragment>
-            <Row>
-                <Col xs={4} style={style.image}></Col>
-                <Col xs={0} md={6} className="table">
-                    <MainText title={content.title} text={content.text} />
-                </Col>
-            </Row>
-        </React.Fragment>
+        <div className="d-flex flex-row-reverse justify-content-center">
+            <div className="my-flex-item">
+                <img className="img-fluid margin-up" src={QuemSomosImg} />
+            </div>
+            <div className="my-flex-item">
+                <MainText title={content.title} text={content.text} />
+            </div>
+        </div>
     );
 
 }

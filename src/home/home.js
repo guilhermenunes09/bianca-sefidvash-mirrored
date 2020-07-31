@@ -4,6 +4,7 @@ import Col from 'react-bootstrap/Col';
 import logo from '../imgs/logo.png';
 import './home.css';
 
+import backgroundImage from '../imgs/home_bg.svg';
 import Container from 'react-bootstrap/Container';
 
 import {useSpring, animated} from 'react-spring';
@@ -19,7 +20,8 @@ const Home = () => {
         })
 
     return(
-        <Container fluid className="fill-height backgroundImage">
+        <Container fluid className="">
+            <div className="backgroundImage"></div>
             <div className="d-flex justify-content-center content-position">
                 <animated.div style={props}>
                     <img src={logo} alt="Logo" style={{width: '300px'}} />

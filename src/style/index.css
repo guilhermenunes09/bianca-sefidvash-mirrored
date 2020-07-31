@@ -35,6 +35,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.main-container {
+  padding-top: 2em;
+}
+
 .show {
   opacity: 1;
 }
@@ -71,3 +75,25 @@ li {
   padding-right: .5em;
 }
 
+.border-left {
+  border-left: 1px solid black !important;
+}
+
+.my-flex-item {
+  width: 400px;
+  border: 1px dotted red;
+}
+.my-flex-item-sm {
+  width: 21px;
+  border: 1px dotted red;
+}
+.my-flex-item-column {
+  min-height: 40px;
+  border: 1px dotted green;
+}
+
+.center {
+  justify-content: left;
+  display: flex;
+  align-items: center;
+}

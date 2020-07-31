@@ -29,24 +29,24 @@ const content = {
 const Residencial = () => {
     return(
         <React.Fragment>
-            <Row style={{height: '50vh'}}>
-                <Col>
+
+            <div className="d-flex flex-row-reverse justify-content-center">
+                <div className="my-flex-item">
                     <MainText title={content.title} text={content.text} />
-                </Col>
-                <Col>
-                    
-                    <Card image={window.location.origin + ResidencialImg2} />
-                   
-                </Col>
-            </Row>
-            <Row>
-                <Col>
-                    <Card image={window.location.origin + ResidencialImg1} />
-                </Col>
-                <Col>
-                    <Card image={window.location.origin + ResidencialImg3} />
-                </Col>
-            </Row>
+                </div>
+                <div className="my-flex-item">
+                    <img className="img-fluid" src={ResidencialImg2} />
+                </div>
+            </div>
+
+            <div className="d-flex flex-row-reverse justify-content-center mb-4">
+                <div className="my-flex-item">
+                    <img className="img-fluid" src={ResidencialImg1} />
+                </div>
+                <div className="my-flex-item">
+                    <img className="img-fluid" src={ResidencialImg3} />
+                </div>
+            </div>
         </React.Fragment>
     )
 }

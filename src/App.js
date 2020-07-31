@@ -19,7 +19,7 @@ import Planejados from './planejados/planejados.js';
 import Funcional from './funcional/funcional.js';
 import Gerenciamento from './gerenciamento/gerenciamento.js';
 import Depoimentos from './depoimentos/depoimentos.js';
-import Fim from './fim/fim.js';
+import Contato from './contato/contato.js';
 
 import Container from 'react-bootstrap/Container';
 
@@ -30,9 +30,10 @@ const App = () => {
     <>
       <header className="App-header"></header>
       <Container fluid className="fill-height">
+        
         <Router>
             <Menu />
-            <div className="container">
+            <div className="container main-container">
               <Switch>
                 <Route exact path="/"><Home /></Route>
                 <Route path="/quemsomos"><QuemSomos /></Route>
@@ -46,7 +47,7 @@ const App = () => {
                 <Route path="/funcional"><Funcional /></Route>
                 <Route path="/gerenciamento"><Gerenciamento /></Route>
                 <Route path="/depoimentos"><Depoimentos /></Route>
-                <Route path="/fim"><Fim /></Route>
+                <Route path="/contato"><Contato /></Route>
               </Switch>
             </div>
         </Router>

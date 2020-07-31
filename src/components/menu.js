@@ -7,6 +7,7 @@ import {
   } from "react-router-dom";
 
 import logo from '../imgs/logo.png';
+import logoRed from '../imgs/logo_red.png';
 
 import './menu.css';
 
@@ -25,13 +26,9 @@ const Menu = props => {
     return(
         <div>
 
-            <nav class="navbar navbar-expand-lg navbar-light bg-light rounded">
-                <a class="navbar-brand text-info font-weight-bolder" href="/">
-                    
-                    
-                    <img src={logo} alt="Logo" style={{width: '100px'}} />
-
-
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand text-info font-weight-bolder text-center" href="/">
+                    <img src={logoRed} alt="Logo" style={{width: '50px'}} />
                 </a>
                 <button class="custom-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample09" aria-controls="navbarsExample09" aria-expanded={!isNavCollapsed ? true : false} aria-label="Toggle navigation" onClick={handleNavCollapse}>
                     <span class="navbar-toggler-icon"></span>
@@ -67,7 +64,7 @@ const Menu = props => {
                     </li>
                     <li><Link to="/gerenciamento">Gerenciamento</Link></li>
                     <li><Link to="/depoimentos">Depoimentos</Link></li>
-                    <li><Link to="/fim">Contato</Link></li>
+                    <li><Link to="/contato">Contato</Link></li>
                     
                 </ul>
             </nav>

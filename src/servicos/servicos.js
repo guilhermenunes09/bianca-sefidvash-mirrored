@@ -14,7 +14,7 @@ const Servicos = () => {
     return(
         <React.Fragment>
             <MainText title={content.title} text={content.text} />
-            <img src={NossoServicosImg1} />
+            <img className="img-fluid" width={800} src={NossoServicosImg1} />
         </React.Fragment>
     )
 }

@@ -36,19 +36,16 @@ const content = {
 
 const Trajetoria = () => {
     return(
-        <React.Fragment>
-            <Row>
-                <Col xs={4} style={style.image} />
-                <Col xs={0} md={6} className="table">
-                    <MainText title={content.title} text={content.text} />
-                </Col>
-            </Row>
-            <Row>
-                <Col>
-            
-                </Col>
-            </Row>
-        </React.Fragment>
+
+        <div className="d-flex flex-row justify-content-center">
+            <div className="my-flex-item">
+                <img className="img-fluid" src={TrajetoriaImg} />
+            </div>
+            <div className="my-flex-item">
+                <MainText title={content.title} text={content.text} />
+            </div>
+        </div>
+
     )
 }
 

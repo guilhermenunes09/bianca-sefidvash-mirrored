@@ -1,6 +1,7 @@
 import React from 'react';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import Card from 'react-bootstrap/Card';
 
 import InterioresImg1 from './img/interiores-1.jpg';
 import InterioresImg2 from './img/interiores-2.png';
@@ -16,23 +17,35 @@ const content = {
 const Interiores = () => {
     return(
         <React.Fragment>
-        <Row style={{height: '50vh'}}>
-                <Col>
-                    <MainText title={content.title} text={content.text} />
-                </Col>
-                <Col>
-                    <img src={InterioresImg1} height={300}  />
-                </Col>
-            </Row>
-            <Row>
-                <Col>
-                    <img src={InterioresImg2} height={300} />
-                </Col>
-                <Col>
-                    <img src={InterioresImg3} height={300} />
-                </Col>
-            </Row>
-     </React.Fragment>
+            <div className="d-flex flex-row-reverse justify-content-center">
+                <div className="my-flex-item">
+                    <MainText title={content.title} />
+
+                    <Card>
+                        <Card.Body>REFORMAS RESIDÊNCIAS – SALAS, QUARTOS, COZINHAS, BANHEIROS, etc;</Card.Body>
+                    </Card>
+                    <Card>
+                        <Card.Body>PRODUÇÃO DE AMBIENTES – DECORAÇÃO, ASSESSORIA DE CORES E REVESTIMENTOS;</Card.Body>
+                    </Card>
+                    <Card>
+                        <Card.Body> REFORMAS DE ÁREAS COMUNS - ÁREAS GOURMET, ESPAÇOS KIDS, ESPAÇOS PETS</Card.Body>
+                    </Card>
+                   
+                </div>
+                <div className="my-flex-item">
+                    <img className="img-fluid" src={InterioresImg1} height={300}  />
+                </div>
+            </div>
+
+            <div className="d-flex flex-row-reverse justify-content-center mb-4">
+                <div className="my-flex-item">
+                    <img className="img-fluid" src={InterioresImg2} height={300}  />
+                </div>
+                <div className="my-flex-item">
+                    <img className="img-fluid" src={InterioresImg3} height={300}  />
+                </div>
+            </div>
+        </React.Fragment>
     )
 }
 
