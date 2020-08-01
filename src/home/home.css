@@ -1,15 +1,4 @@
-.backgroundImage {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url('../imgs/home_bg.svg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    z-index: 0;
-    scale: 2;
-}
+
 
 .verticalHorizontal {
     display: table-cell;
@@ -20,7 +9,12 @@
 }
 
 .content-position {
-    position: absolute;
-    top: 40%;
-    left: 52%;
+
+    box-flex: .5;
+}
+
+#flexbox {
+    -webkit-box-align:center;
+    -webkit-box-pack:center;
+    display:-webkit-box;
 }

@@ -1,20 +1,9 @@
 import React from 'react';
 
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-
 import QuemSomosImg from './img/quemsomos-1-02.png';
 import MainText from '../components/mainText.js';
 
 import './quemsomos.css';
-
-const style = {
-    image: {
-        height: '100vh',
-        backgroundColor: '#cc000c',
-        backgroundSize: 'cover',
-    }
-}
 
 const content = {
     title: `Quem Somos`,
@@ -25,9 +14,9 @@ const content = {
 const QuemSomos = () => {
 
     return (
-        <div className="d-flex flex-row-reverse justify-content-center">
+        <div id="page" className="d-flex flex-row-reverse justify-content-center">
             <div className="my-flex-item">
-                <img className="img-fluid margin-up" src={QuemSomosImg} />
+                <img alt="Modelo 3D Casa" className="img-fluid margin-up" src={QuemSomosImg} />
             </div>
             <div className="my-flex-item">
                 <MainText title={content.title} text={content.text} />

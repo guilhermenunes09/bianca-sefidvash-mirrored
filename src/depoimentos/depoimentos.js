@@ -1,12 +1,9 @@
 import React from 'react';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-
 
 const Depoimentos = () => {
     return(
-        <React.Fragment>
-           <h1></h1>
+        <div className="container" id="page">
+           <h1>Depoimentos</h1>
            <p>
             ”Excelente profissional com muita criatividade e
             empatia para atender as necessidades dos clientes.”
@@ -24,7 +21,7 @@ const Depoimentos = () => {
             Arquiteta superou novamente as nossa expectativas.
             A renovação do nosso espaço ficou incrível e muito agradável.”   
            </p>
-        </React.Fragment>
+        </div>
     )
 }
 

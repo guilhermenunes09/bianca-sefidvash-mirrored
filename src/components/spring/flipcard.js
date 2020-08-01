@@ -17,8 +17,8 @@ function FlipCard() {
 
   return (
     <div onClick={() => setDegrees(degrees => degrees+180)}>
-      <a.div class="c back" style={{ opacity: opacity.interpolate(o => 1 - o), transform }} />
-      <a.div class="c front" style={{ opacity, transform: transform.interpolate(t => `${t} rotateX(180deg)`) }} />
+      <a.div className="c back" style={{ opacity: opacity.interpolate(o => 1 - o), transform }} />
+      <a.div className="c front" style={{ opacity, transform: transform.interpolate(t => `${t} rotateX(180deg)`) }} />
     </div>
   )
 }

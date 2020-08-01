@@ -2,8 +2,7 @@ import React from 'react';
 import {
   BrowserRouter as Router,
   Switch,
-  Route,
-  Link
+  Route
 } from "react-router-dom";
 import Menu from './components/menu.js';
 
@@ -22,7 +21,7 @@ import Depoimentos from './depoimentos/depoimentos.js';
 import Contato from './contato/contato.js';
 import Footer from './components/footer.js';
 
-import Container from 'react-bootstrap/Container';
+//import { Link, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll';
 
 
 const App = () => {
@@ -30,8 +29,7 @@ const App = () => {
   return (
     <>
       <header className="App-header"></header>
-      <Container fluid className="fill-height">
-        
+      <div className="container-fluid fill-height">
         <Router>
             <Menu />
             <div className="container main-container">
@@ -51,9 +49,10 @@ const App = () => {
                 <Route path="/contato"><Contato /></Route>
               </Switch>
             </div>
+
             <Footer />
         </Router>
-      </Container>
+      </div>
     </>
   );
 }

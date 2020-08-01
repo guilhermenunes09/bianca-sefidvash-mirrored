@@ -1,20 +1,8 @@
 import React from 'react';
 
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import Card from 'react-bootstrap/Card';
-
 import ProjetoImage from './img/projeto-10.jpg';
 
 import MainText from '../components/mainText.js';
-
-const style = {
-    image: {
-        display: 'flex',
-        justifyContent: 'flex-end',
-        alignItems: 'center',
-    }
-}
 
 const content = {
     title: `O que Esperar de um projeto por arquiteta Bianca Safidvash`,
@@ -27,22 +15,21 @@ const content = {
 
 const Projeto = () => {
     return(
-        <div className="d-flex flex-row justify-content-center">
+        <div id="page" className="d-flex flex-row justify-content-center">
             <div className="my-flex-item">
                 <MainText title={content.title} />
             </div>
             <div className="my-flex-item">
                 { content.text && content.text.map((item, index) => {
-                    console.log("item: " + item);
                     return(
-                        <Card key={index}>
-                            <Card.Body>{item}</Card.Body>
-                        </Card>
+                        <div key={index}>
+                            <div>{item}</div>
+                        </div>
                     )
                 })}
             </div>
             <div className="my-flex-item">
-                <img className="img-fluid" src={ProjetoImage} width={410} height={300} />
+                <img alt="Modelo 3D Casa" className="img-fluid" src={ProjetoImage} width={410} height={300} />
             </div>
         </div>
     );

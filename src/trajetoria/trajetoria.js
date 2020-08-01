@@ -1,26 +1,7 @@
 import React from 'react';
 
-
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-
 import TrajetoriaImg from './img/trajetoria-lareira.jpg';
 import MainText from '../components/mainText.js';
-
-const style = {
-    image: {
-        backgroundColor: '#cc000c',
-        backgroundImage: `url(${TrajetoriaImg})`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'right'
-    },
-    trajetoria: {
-        padding: '6em',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-    },
-}
 
 const content = {
     title: `Trajetória`,
@@ -36,16 +17,14 @@ const content = {
 
 const Trajetoria = () => {
     return(
-
-        <div className="d-flex flex-row justify-content-center">
-            <div className="my-flex-item">
-                <img className="img-fluid" src={TrajetoriaImg} />
+            <div id="page" className="d-flex flex-row justify-content-center">
+                <div className="my-flex-item">
+                    <img alt="Modelo 3D Casa" className="img-fluid" src={TrajetoriaImg} />
+                </div>
+                <div className="my-flex-item">
+                    <MainText title={content.title} text={content.text} />
+                </div>
             </div>
-            <div className="my-flex-item">
-                <MainText title={content.title} text={content.text} />
-            </div>
-        </div>
-
     )
 }
 

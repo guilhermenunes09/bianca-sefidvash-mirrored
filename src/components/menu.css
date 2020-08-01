@@ -17,6 +17,7 @@ body.noscroll
     color: black;
     z-index: 1;
     background-color: transparent !important;
+    position: absolute;
 }
 
 .navbar a{
