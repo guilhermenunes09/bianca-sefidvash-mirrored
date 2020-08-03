@@ -1,4 +1,7 @@
 
+.mainLogo {
+    margin-top: -100px;
+}
 
 .verticalHorizontal {
     display: table-cell;
@@ -18,3 +21,4 @@
     -webkit-box-pack:center;
     display:-webkit-box;
 }
+

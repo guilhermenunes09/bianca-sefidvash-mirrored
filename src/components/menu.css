@@ -15,18 +15,17 @@ body.noscroll
     font-family: chaletLondon;
     font-size: small;
     color: black;
-    z-index: 1;
     background-color: transparent !important;
-    position: absolute;
 }
 
 .navbar a{
-    color: #505050;
+    color: gray !important;
     text-decoration: none;
+    cursor: pointer;
 }
 
 .navbar a:hover {
-    color: black;
+    color: black !important;
 }
 
 .btn-primary {

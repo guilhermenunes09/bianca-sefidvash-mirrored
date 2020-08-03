@@ -13,6 +13,8 @@ import { disableBodyScroll, enableBodyScroll } from 'body-scroll-lock';
 
 import Logo from "../imgs/logo.png";
 
+import Img from '../components/img.js';
+
 
 const Contato = () => {
 
@@ -31,13 +33,13 @@ const Contato = () => {
             <div className="my-flex-item">
                 <div className="d-flex flex-column justify-content-between column-height pl-4">
                     
-                    <div className="my-flex-item-column">
-                        <img alt="Logo Bianca Sefidvash Arquiteta" className="img-fluid" src={Logo} width={200} />
+                    <div className="my-flex-item-column text-center">
+                        <Img nofluid image={Logo} alt={"Logo Bianca Sefidvash Arquiteta"} width={200} />
                     </div>
                     
                     <div className="d-flex flex-row my-flex-item-column">
                         <div className="my-flex-item-sm center">
-                            <img alt="Ícone Instagram @arquiteta_biancasefidvash" src={iconInstagram} width={20} />
+                            <Img nofluid image={iconInstagram} alt={"Ícone Instagram @arquiteta_biancasefidvash"} width={20} />
                         </div>
                         <div className="my-flex-item center pl-2">
                             @arquiteta_biancasefidvash
@@ -46,7 +48,7 @@ const Contato = () => {
 
                     <div className="d-flex flex-row my-flex-item-column">
                         <div className="my-flex-item-sm center">
-                            <img alt="Ícone Facebook /ArquitetaBiancaSefidvash" src={iconFacebook} width={20} />
+                            <Img nofluid image={iconFacebook} alt={"Ícone Facebook /ArquitetaBiancaSefidvash"} width={20} />
                         </div>
                         <div className="my-flex-item center pl-2">
                             /ArquitetaBiancaSefidvash
@@ -55,7 +57,7 @@ const Contato = () => {
 
                     <div className="d-flex flex-row my-flex-item-column">
                         <div className="my-flex-item-sm center">
-                            <img alt="Ícone Email arq.bianca@sefidvash.net" src={iconEmail} width={20} />
+                            <Img nofluid image={iconEmail} alt={"Ícone Email arq.bianca@sefidvash.net"} width={20} />
                         </div>
                         <div className="my-flex-item center pl-2">
                             arq.bianca@sefidvash.net
@@ -64,7 +66,8 @@ const Contato = () => {
 
                     <div className="d-flex flex-row my-flex-item-column">
                         <div className="my-flex-item-sm center">
-                            <img alt="Ícone telefone arquiteta 19 99304-3052" src={iconPhone} width={20} />
+                        <Img nofluid image={iconPhone} alt={"Ícone telefone arquiteta 19 99304-3052"} width={20} />
+                            
                         </div>
                         <div className="my-flex-item center pl-2">
                             19 99304-3052
@@ -73,7 +76,7 @@ const Contato = () => {
                 </div>
             </div>
             <div className="my-flex-item">
-                <img alt="Modelo Casa 3D Interior" className="img-fluid" src={contatoImg} />
+                <Img image={contatoImg} alt={"Modelo Casa 3D Interior"} />
             </div>
         </div>
     )

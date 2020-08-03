@@ -1,7 +1,7 @@
 import React from 'react';
 
 import MainText from '../components/mainText.js';
-
+import Title from '../components/title.js';
 
 const content = {
     title: `Nossas Forças`,
@@ -12,9 +12,9 @@ const Forcas = () => {
 
     return(
         <div id="page">
-            <MainText title={content.title} />
-
-
+            <div className="text-center">
+                <Title title={content.title} name={"forcas"} />
+            </div>
         </div>
     )
 }

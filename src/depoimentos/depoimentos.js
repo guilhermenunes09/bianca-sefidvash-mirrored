@@ -1,9 +1,10 @@
 import React from 'react';
+import Title from '../components/title.js';
 
 const Depoimentos = () => {
     return(
         <div className="container" id="page">
-           <h1>Depoimentos</h1>
+           <Title title={"Depoimentos"} name="depoimentos" />
            <p>
             ”Excelente profissional com muita criatividade e
             empatia para atender as necessidades dos clientes.”

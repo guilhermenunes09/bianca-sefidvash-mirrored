@@ -2,6 +2,10 @@ import React from 'react';
 
 import TrajetoriaImg from './img/trajetoria-lareira.jpg';
 import MainText from '../components/mainText.js';
+import Title from '../components/title.js';
+
+
+import Img from '../components/img.js';
 
 const content = {
     title: `Trajetória`,
@@ -17,14 +21,19 @@ const content = {
 
 const Trajetoria = () => {
     return(
-            <div id="page" className="d-flex flex-row justify-content-center">
+        <div id="page">
+            <div className="text-center">
+                <Title title={content.title} name="trajetoria" />
+            </div>
+            <div className="d-flex flex-row justify-content-center">
                 <div className="my-flex-item">
-                    <img alt="Modelo 3D Casa" className="img-fluid" src={TrajetoriaImg} />
+                    <Img image={TrajetoriaImg} alt={"Modelo 3D Casa"} />
                 </div>
                 <div className="my-flex-item">
-                    <MainText title={content.title} text={content.text} />
+                    <MainText text={content.text} />
                 </div>
             </div>
+        </div>
     )
 }
 

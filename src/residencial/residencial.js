@@ -4,7 +4,11 @@ import ResidencialImg1 from './img/residencial-5.jpg';
 import ResidencialImg2 from './img/residencial-6.png';
 import ResidencialImg3 from './img/residencial-seacost.jpg';
 
+import Img from '../components/img.js';
+
 import MainText from '../components/mainText.js';
+import Title from '../components/title.js';
+
 
 const content = {
     title: `Projetos de Arquitetura Residencial`,
@@ -17,19 +21,20 @@ const Residencial = () => {
         <div id="page">
             <div className="d-flex flex-row-reverse justify-content-center">
                 <div className="my-flex-item">
-                    <MainText title={content.title} text={content.text} />
+                    <Title title={content.title} />
+                    <MainText text={content.text} />
                 </div>
                 <div className="my-flex-item">
-                    <img alt="Modelo 3D Casa" className="img-fluid" src={ResidencialImg2} />
+                    <Img image={ResidencialImg2} alt={"Modelo 3D Casa"} />
                 </div>
             </div>
 
             <div className="d-flex flex-row-reverse justify-content-center mb-4">
                 <div className="my-flex-item">
-                    <img alt="Modelo 3D Casa" className="img-fluid" src={ResidencialImg1} />
+                    <Img image={ResidencialImg1} alt={"Modelo 3D Casa"} />
                 </div>
                 <div className="my-flex-item">
-                    <img alt="Modelo 3D Casa" className="img-fluid" src={ResidencialImg3} />
+                    <Img image={ResidencialImg3} alt={"Modelo 3D Casa"} />
                 </div>
             </div>
         </div>

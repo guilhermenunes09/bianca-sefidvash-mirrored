@@ -1,11 +1,14 @@
 import React from 'react';
 
+import Img from '../components/img.js';
 import GerenciamentoImg1 from './img/gerenciamento-1.jpg';
 import GerenciamentoImg2 from './img/gerenciamento-2.jpg';
 import GerenciamentoImg3 from './img/gerenciamento-3.jpg';
 import GerenciamentoImg4 from './img/gerenciamento-4.png';
 
 import MainText from '../components/mainText.js';
+import Title from '../components/title.js';
+
 
 const content = {
     c1: {
@@ -21,16 +24,17 @@ const content = {
 const Gerenciamento = () => {
     return(
         <div id="page">
-            <div className="d-flex flex-row-reverse justify-content-center">
+            <div className="d-flex flex-lg-row flex-md-row flex-sm-column align-items-sm-center align-items-md-start justify-content-center">
                 <div className="my-flex-item">
-                    <MainText title={content.c1.title} text={content.c1.text} />
+                    <Title title={content.c1.title} text={content.c1.text} />
        
                 </div>
                 <div className="my-flex-item">
-                    <div className="d-flex flex-column justify-content-around">
+                    <div className="d-flex flex-row justify-content-around">
                         <div className="my-flex-item-column flex-fill">
-                            <img alt="Modelo 3D Casa" className="img-fluid" src={GerenciamentoImg1} />
-                            <img alt="Modelo 3D Casa" className="img-fluid" src={GerenciamentoImg2} />
+                            <Img image={GerenciamentoImg1} alt={"Modelo 3D Casa"} />
+                            <Img image={GerenciamentoImg2} alt={"Modelo 3D Casa"} />
+
                         </div>
                         <div className="my-flex-item-column h-center mt-5 pt-4">
                             
@@ -41,13 +45,14 @@ const Gerenciamento = () => {
             <div className="p-5 m-5 h-center">
                 "Frase de Inspiração"
             </div>
-            <div className="d-flex flex-row justify-content-center">
+            <div className="d-flex flex-lg-row flex-md-row flex-sm-column align-items-sm-center align-items-md-start justify-content-center">
                 <div className="my-flex-item">
     
                 </div>
                 <div className="my-flex-item">
-                    <img alt="Modelo 3D Casa" className="img-fluid" src={GerenciamentoImg3} />
-                    <img alt="Modelo 3D Casa" className="img-fluid" src={GerenciamentoImg4} />
+                    <Img image={GerenciamentoImg3} alt={"Modelo 3D Casa"} />
+                    <Img image={GerenciamentoImg4} alt={"Modelo 3D Casa"} />
+
                 </div>
             </div>
 

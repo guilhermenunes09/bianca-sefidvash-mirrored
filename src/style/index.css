@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;900&display=swap');
 @font-face {
   font-family: 'ChaletLondon';
   src: local('ChaletLondon'), url(./fonts/Chalet-LondonSixty.otf) format('opentype');
@@ -40,15 +40,10 @@
 }
 
 html, body {
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  height: 100%;
+  font-family: ChaletLondon, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: medium;
   overflow-x: hidden;
-
-  background: rgb(255,255,255);
-  background: linear-gradient(180deg, rgba(255,255,255,1) 3%, rgba(230,230,230,1) 100%);
 }
-
-
 
 body {
   margin: 0;
@@ -87,8 +82,16 @@ body {
 }
 
 h1 {
-  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
   text-transform: uppercase;
+  padding-top:100px;
+  padding-bottom: 30px;
+}
+
+p {
+  color: #4f6365;
+  font-family: 'Roboto', sans-serif;
 }
 
 li {
@@ -102,15 +105,16 @@ li {
 
 .my-flex-item {
   width: 400px;
-  border: 1px dotted red;
+  border: 3px dotted red;
+
 }
 .my-flex-item-sm {
   width: 21px;
-  border: 1px dotted red;
+
 }
 .my-flex-item-column {
   min-height: 40px;
-  border: 1px dotted green;
+
 }
 
 .center {
@@ -138,7 +142,30 @@ li {
   scale: 2;
 }
 
+.img-effect {
+  width: 400px; /* width of container */
+  height: 200px; /* height of container */
+  object-fit: cover;
+  padding:.2em;
+}
+
 #page {
   min-height: 100vh;
-  padding-top: 100px;
+  z-index: 10-;
 }
+
+.svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index:-1;
+}
+
+.background-line {
+  stroke:rgb(0,0,0);
+  stroke-width:4;
+}
+
+
+
+

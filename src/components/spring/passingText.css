@@ -1,0 +1,41 @@
+
+.negative-margin {
+    margin-top: -25px;
+}
+.simple-trans-main > div {
+  padding-top:1em;
+  padding-left: 3em;
+  padding-right: 3em;
+  cursor: pointer;
+  position: absolute;
+  width: 500px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  will-change: transform, opacity;
+  left: 50%;
+  margin-top: 2em;
+}
+
+.card-text-number {
+    text-shadow: 0px 2px 40px #00000020, 0px 2px 5px #00000030;
+    font-size: 2em;
+    color: white;
+    font-weight: 800;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-text {
+    font-family: 'Roboto', sans-serif;
+    text-shadow: 0px 2px 40px #00000020, 0px 2px 5px #00000030;
+    font-size: small;
+    color: black;
+    padding-left:3.3em;
+    padding-right:3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

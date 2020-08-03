@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import {
   BrowserRouter as Router,
   Switch,
@@ -21,17 +21,30 @@ import Depoimentos from './depoimentos/depoimentos.js';
 import Contato from './contato/contato.js';
 import Footer from './components/footer.js';
 
-//import { Link, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll';
+import { Link, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll';
+import Parallax from './components/parallax.js';
+
+
 
 
 const App = () => {
 
+  //<Parallax />
+  //<Parallax numberLines={2} x1={-1363} x2={270} y1={1619} translateX={277} rotate={18}/>
+  useEffect(()=>{
+    Events.scrollEvent.register('begin', function(to, element) {
+      console.log('begin', arguments);
+    });
+  });
+
   return (
     <>
       <header className="App-header"></header>
-      <div className="container-fluid fill-height">
+      <div id="firstContainer" className="container-fluid fill-height">
+       
         <Router>
             <Menu />
+            
             <div className="container main-container">
               <Switch>
                 <Route exact path="/"><Home /></Route>

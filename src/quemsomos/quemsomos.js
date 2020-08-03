@@ -2,6 +2,8 @@ import React from 'react';
 
 import QuemSomosImg from './img/quemsomos-1-02.png';
 import MainText from '../components/mainText.js';
+import Img from '../components/img.js';
+import Title from '../components/title.js';
 
 import './quemsomos.css';
 
@@ -14,12 +16,18 @@ const content = {
 const QuemSomos = () => {
 
     return (
-        <div id="page" className="d-flex flex-row-reverse justify-content-center">
-            <div className="my-flex-item">
-                <img alt="Modelo 3D Casa" className="img-fluid margin-up" src={QuemSomosImg} />
+        <div id="page">
+            <div className="text-center">
+                <Title name="quemsomos" title={content.title} />
             </div>
-            <div className="my-flex-item">
-                <MainText title={content.title} text={content.text} />
+            
+            <div className="d-flex flex-row align-items-center justify-content-center">
+                <div className="my-flex-item">
+                    <Img image={QuemSomosImg} alt={"Modelo 3D Casa"} />
+                </div>
+                <div className="my-flex-item">
+                    <MainText text={content.text} />
+                </div>
             </div>
         </div>
     );
