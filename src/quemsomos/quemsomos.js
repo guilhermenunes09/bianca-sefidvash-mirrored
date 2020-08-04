@@ -16,17 +16,19 @@ const content = {
 const QuemSomos = () => {
 
     return (
-        <div id="page">
-            <div className="text-center">
-                <Title name="quemsomos" title={content.title} />
-            </div>
-            
-            <div className="d-flex flex-row align-items-center justify-content-center">
-                <div className="my-flex-item">
-                    <Img image={QuemSomosImg} alt={"Modelo 3D Casa"} />
+        <div className="quemsomos-fix expand">
+            <div id="page" className="dark-mode" name="quemsomos">
+                <div className="text-center">
+                    <Title title={content.title} />
                 </div>
-                <div className="my-flex-item">
-                    <MainText text={content.text} />
+                
+                <div className="d-flex flex-row align-items-center justify-content-center">
+                    <div className="my-flex-item">
+                        <Img image={QuemSomosImg} alt={"Modelo 3D Casa"} />
+                    </div>
+                    <div className="my-flex-item">
+                        <MainText text={content.text} />
+                    </div>
                 </div>
             </div>
         </div>

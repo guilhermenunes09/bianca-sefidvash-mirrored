@@ -2,6 +2,7 @@ import React from 'react';
 
 import MainText from '../components/mainText.js';
 import Title from '../components/title.js';
+import ForcasDynamics from './forcasDynamics.js';
 
 const content = {
     title: `Nossas Forças`,
@@ -11,9 +12,10 @@ const content = {
 const Forcas = () => {
 
     return(
-        <div id="page">
+        <div id="page" name={"forcas"} >
             <div className="text-center">
-                <Title title={content.title} name={"forcas"} />
+                <Title title={content.title} />
+                <ForcasDynamics />
             </div>
         </div>
     )

@@ -89,7 +89,7 @@ function SubMenu () {
     function handleOnScroll (scrollY, offset){
         console.log("OFFSET");
         console.log(offset)
-        if(scrollY >= offset) {
+        if(scrollY + 40 >= offset) {
             if(sticky === 0) {
                 setSticky(1);
             }

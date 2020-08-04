@@ -21,16 +21,8 @@ const content = {
 const Projeto = () => {
     return(
         <div id="page">
-            <div className="text-center">
-                <Title title={content.title} name="projeto" />
-            </div>
-            <div className="d-flex flex-row justify-content-center">
-                <div className="my-flex-item">
-                    <Img image={ProjetoImage} alt={"Modelo 3D Casa"} />
-                </div>
-            </div>
             <div className="d-flex flex-row justify-content-center align-items-center">
-                <div className="container">
+                <div style={{height: '300px'}} className="container">
                     <PassingText />
                 </div>
             </div>

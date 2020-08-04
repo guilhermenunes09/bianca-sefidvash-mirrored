@@ -21,9 +21,9 @@ const content = {
 
 const Trajetoria = () => {
     return(
-        <div id="page">
+        <div id="page" name="trajetoria" style={{position: 'relative'}}>
             <div className="text-center">
-                <Title title={content.title} name="trajetoria" />
+                <Title title={content.title} />
             </div>
             <div className="d-flex flex-row justify-content-center">
                 <div className="my-flex-item">
