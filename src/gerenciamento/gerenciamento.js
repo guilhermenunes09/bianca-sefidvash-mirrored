@@ -6,9 +6,28 @@ import GerenciamentoImg2 from './img/gerenciamento-2.jpg';
 import GerenciamentoImg3 from './img/gerenciamento-3.jpg';
 import GerenciamentoImg4 from './img/gerenciamento-4.png';
 
+import ImageSwiper from '../components/swiper/imageSwiper';
+
 import MainText from '../components/mainText.js';
 import Title from '../components/title.js';
 
+const photos1 = [
+    {src:GerenciamentoImg1,
+    width:170,
+    height:97,},
+    {src:GerenciamentoImg2,
+    width:117,
+    height:78,},
+]
+
+const photos2 = [
+    {src:GerenciamentoImg3,
+    width:120,
+    height:90,},
+    {src:GerenciamentoImg4,
+    width:150,
+    height:125,},
+]
 
 const content = {
     c1: {
@@ -24,35 +43,18 @@ const content = {
 const Gerenciamento = () => {
     return(
         <div id="page">
-            <div className="d-flex flex-lg-row flex-md-row flex-sm-column align-items-sm-center align-items-md-start justify-content-center">
-                <div className="my-flex-item">
-                    <Title title={content.c1.title} text={content.c1.text} />
-       
-                </div>
-                <div className="my-flex-item">
-                    <div className="d-flex flex-row justify-content-around">
-                        <div className="my-flex-item-column flex-fill">
-                            <Img image={GerenciamentoImg1} alt={"Modelo 3D Casa"} />
-                            <Img image={GerenciamentoImg2} alt={"Modelo 3D Casa"} />
-
-                        </div>
-                        <div className="my-flex-item-column h-center mt-5 pt-4">
-                            
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div className="p-5 m-5 h-center">
-                "Frase de Inspiração"
+            <div className="text-center">
+                <Title title={content.c1.title} />
             </div>
             <div className="d-flex flex-lg-row flex-md-row flex-sm-column align-items-sm-center align-items-md-start justify-content-center">
-                <div className="my-flex-item">
-    
+                <div className="my-flex-item swipe">
+                    <ImageSwiper photos={photos1} />
                 </div>
-                <div className="my-flex-item">
-                    <Img image={GerenciamentoImg3} alt={"Modelo 3D Casa"} />
-                    <Img image={GerenciamentoImg4} alt={"Modelo 3D Casa"} />
+            </div>
 
+            <div className="d-flex flex-lg-row flex-md-row flex-sm-column align-items-sm-center align-items-md-start justify-content-center">
+                <div className="my-flex-item swipe">
+                    <ImageSwiper photos={photos2} />
                 </div>
             </div>
 

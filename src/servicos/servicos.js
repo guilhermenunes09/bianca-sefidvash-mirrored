@@ -19,21 +19,12 @@ const content = {
 const Servicos = () => {
     return(
         <div id="page">
-            <div className="d-flex flex-row-reverse justify-content-center">
-                <div className="">
-                    <Title title={content.title} text={content.text} />
-                    <Img image={NossoServicosImg1} alt={"Modelo 3D Casa"} width={800} />
-                </div>
+            <div className="text-center">
+                <Title title={content.title} />
             </div>
-            <div className="fill-height m-5 p-5">
-                <Interiores />
-            </div>
-            <div className="fill-height m-5 p-5">
-                <Residencial />
-            </div>
-            <div className="fill-height m-5 p-5">
-                <Funcional />
-            </div>
+            <Interiores />
+            <Residencial />
+            <Funcional />
         </div>
     )
 }
