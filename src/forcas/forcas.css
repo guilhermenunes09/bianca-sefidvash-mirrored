@@ -7,13 +7,10 @@
 
 .dayna-plane {
     cursor: pointer;
-    display: table-cell;
     background: white;
     border: 3px solid black;
     width: 200px;
     height: 200px;
-
-    text-shadow: 0px 2px 40px #00000020, 0px 2px 5px #00000030;
     font-size: 1em;
     color: black;
     font-weight: 800;

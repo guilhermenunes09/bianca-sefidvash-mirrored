@@ -4,36 +4,51 @@ import { Link as LinkSame, scroller, Events } from 'react-scroll'
 import { useSpring, useTransition, animated, config } from 'react-spring';
 import { Handle } from 'rc-slider';
 import { withRouter } from 'react-router-dom/cjs/react-router-dom.min';
+import logo from '../imgs/logo_red.png';
+import menuicon from '../imgs/iconmonstr-menu-5.svg';
 
 function SubMenuDom (props) {
     return(
-        <>
-            <LinkSame to="quemsomos" smooth={true}>
-                <div className="submenu-item">
-                    Quem Somos
+        <div style={{width: '100%'}}>
+            <div className="d-flex flex-row justify-content-between align-items-center">
+                {!!props.sticky && (
+                    <div><img className={"pl-3"} src={logo} width={40} /></div>
+                )}
+                
+                <div className="d-flex flex-row justify-content-center align-items-center navbar-collapse">
+                    <LinkSame to="quemsomos" smooth={true}>
+                        <div className="submenu-item">
+                            Quem Somos
+                        </div>
+                    </LinkSame>
+                    <LinkSame to="trajetoria" smooth={true}>
+                        <div className="submenu-item">
+                            Trajetória
+                        </div>
+                    </LinkSame>
+                    <LinkSame to="projeto" smooth={true}>
+                        <div className="submenu-item">
+                            Projetos
+                        </div>
+                    </LinkSame>
+                    <LinkSame to="forcas" smooth={true}>
+                        <div className="submenu-item">
+                            Nossas Forças
+                        </div>
+                    </LinkSame>
+                    <LinkSame to="depoimentos" smooth={true}>
+                        <div className="submenu-item">
+                            Depoimentos
+                        </div>
+                    </LinkSame>
                 </div>
-            </LinkSame>
-            <LinkSame to="trajetoria" smooth={true}>
-                <div className="submenu-item">
-                    Trajetória
+                {!!props.sticky && (
+                <div className={"pr-3"}>
+                    <img src={menuicon} />
                 </div>
-            </LinkSame>
-            <LinkSame to="projeto" smooth={true}>
-                <div className="submenu-item">
-                    Projetos
-                </div>
-            </LinkSame>
-            <LinkSame to="forcas" smooth={true}>
-                <div className="submenu-item">
-                    Nossas Forças
-                </div>
-            </LinkSame>
-            <LinkSame to="depoimentos" smooth={true}>
-                <div className="submenu-item">
-                    Depoimentos
-                </div>
-            </LinkSame>
-        </>
+                )}
+            </div>
+        </div>
     );
 }
 
@@ -116,13 +131,13 @@ function SubMenu () {
 
 
     return(
-            <>
+            <div className={"d-none d-sm-block d-lg-block"}>
 
             <animated.div style={propsSpring2} className={subMenuClass1} ref={someRefName}>
-                <SubMenuDom/>
+                <SubMenuDom sticky={sticky}/>
             </animated.div>
            
-        </>
+        </div>
     );
 }
 

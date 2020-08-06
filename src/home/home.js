@@ -65,8 +65,6 @@ const Home = () => {
         <>
             <SubMenu />
 
-            
-
             <div id="flexbox" className="fill-height d-flex justify-content-center align-items-center content-position">
                 <animated.div style={props}>
                     <img className="mainLogo" src={logo} alt="Logo" style={{width: '300px'}} />

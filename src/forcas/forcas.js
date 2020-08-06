@@ -15,8 +15,8 @@ const Forcas = () => {
         <div id="page" name={"forcas"} >
             <div className="text-center">
                 <Title title={content.title} />
-                <ForcasDynamics />
             </div>
+            <ForcasDynamics />
         </div>
     )
 }

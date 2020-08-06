@@ -26,11 +26,11 @@ function DynaPlane ({text}) {
 
 
     return(
-        <div className="item-dynamics ">
-            <animated.div style={props} onMouseOver={handleMouseOver} onMouseOut={handleMouseOut} className="dayna-plane">
+ 
+            <animated.div className="item-dynamics" style={props} onMouseOver={handleMouseOver} onMouseOut={handleMouseOut} className="dayna-plane">
                 {text}
             </animated.div>
-        </div>
+
     );
 }
 
@@ -48,12 +48,10 @@ function ForcasDynamics() {
 
     return(
         <>
-            <div style={{marginLeft: "-30px"}} className="d-flex flex-row justify-content-center align-items-center">
-                
+            <div style={{marginLeft: "-30px"}} className="d-flex flex-row justify-content-center align-items-center text-center flex-wrap">
                 {content.text.map((item, key) => (
                     <DynaPlane text={item} />
                 ))}
-
             </div>
         </>
     );
