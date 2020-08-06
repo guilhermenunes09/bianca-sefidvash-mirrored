@@ -20,6 +20,7 @@ import Gerenciamento from './gerenciamento/gerenciamento.js';
 import Depoimentos from './depoimentos/depoimentos.js';
 import Contato from './contato/contato.js';
 import Footer from './components/footer.js';
+import './components/background/background.css';
 
 import { Link, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll';
 import Parallax from './components/parallax.js';

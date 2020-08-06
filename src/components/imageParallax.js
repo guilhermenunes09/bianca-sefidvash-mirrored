@@ -8,10 +8,11 @@ function ImageParallax (props) {
     return(
         <div id="page" >
             <Parallax
-                blur={{ min: -30, max: 50}}
-                bgImage={ImgParallaxInteriores}
-                bgImageAlt="the dog"
-                strength={-500}
+                blur={{ min: -15, max: 25 }}
+                bgImage={props.image ? props.image : ImgParallaxInteriores}
+                bgImageAlt="Background Parallax"
+                strength={-200}
+                
             >
                 {props.gallery && (
                     <div className="d-flex flex-row justify-content-center align-items-center" style={{ minHeight: '100vh', paddingTop: '2em', paddingBottom: '2em' }} >

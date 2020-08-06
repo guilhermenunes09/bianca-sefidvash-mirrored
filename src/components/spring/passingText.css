@@ -54,3 +54,10 @@
     justify-content: center;
     align-items: center;
 }
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    right: 60px;
+    filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(125deg) brightness(118%) contrast(119%);
+}

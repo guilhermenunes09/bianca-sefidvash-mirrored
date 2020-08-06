@@ -3,6 +3,7 @@ import { useTransition, animated } from 'react-spring'
 import './passingText.css'
 import Typist from 'react-typist';
 import Title from '../../components/title.js';
+import Arrow from '../../imgs/arrow.svg';
 
 const content = {
     background: '#303030',
@@ -19,15 +20,18 @@ function AnimatedDivs (props) {
           <div className="card-text-number">
             {props.number}
           </div>
-          {props.text && (
-              <div style={{width: "500px"}} className="card-text">
-                
-                <Typist delay={1500} avgTypingDelay={20} blink={true}>
-                    {props.text}
-                </Typist>
-              </div>
-          )}
-          
+          <div>
+            {props.text && (
+                <div style={{width: "500px"}} className="card-text">  
+                  <Typist delay={1500} avgTypingDelay={20} blink={true}>
+                      {props.text}
+                  </Typist>
+                </div>
+            )}
+          </div>
+          <div className="arrow">
+            <img src={Arrow} />
+          </div>
       </div>
     );
 }
