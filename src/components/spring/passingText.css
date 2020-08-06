@@ -3,12 +3,19 @@
     margin-top: -25px;
 }
 
-.passing-text-container {
+.simple-trans-main {
     position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
     left: 0;
     background: #303030;
-    width: 100%;
-    height: 100vh;
+    border: 5px dotted blue;
+}
+
+.passing-text-container {
+    
+    
 }
 
 .simple-trans-main > div {

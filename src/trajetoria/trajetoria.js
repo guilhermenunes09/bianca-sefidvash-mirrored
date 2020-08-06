@@ -3,7 +3,7 @@ import React from 'react';
 import TrajetoriaImg from './img/trajetoria-lareira.jpg';
 import MainText from '../components/mainText.js';
 import Title from '../components/title.js';
-
+import ImageSwiper from '../components/swiper/imageSwiper.js';
 
 import Img from '../components/img.js';
 
@@ -19,6 +19,12 @@ const content = {
     marcante do seu trabalho.`]
 }
 
+const photos = [{
+    src: TrajetoriaImg,
+    width: 1117,
+    height: 777
+}]
+
 const Trajetoria = () => {
     return(
         <div id="page" name="trajetoria" style={{position: 'relative'}}>
@@ -27,7 +33,7 @@ const Trajetoria = () => {
             </div>
             <div className="d-flex flex-row justify-content-center">
                 <div className="my-flex-item">
-                    <Img image={TrajetoriaImg} alt={"Modelo 3D Casa"} />
+                    <ImageSwiper photos={photos} />
                 </div>
                 <div className="my-flex-item">
                     <MainText text={content.text} />

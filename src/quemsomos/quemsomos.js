@@ -5,6 +5,8 @@ import MainText from '../components/mainText.js';
 import Img from '../components/img.js';
 import Title from '../components/title.js';
 
+import ImageSwiper from '../components/swiper/imageSwiper.js';
+
 import './quemsomos.css';
 
 const content = {
@@ -13,10 +15,15 @@ const content = {
     `Formada pela PUC, em Porto Alegre/RS, a arquiteta Bianca Sefidvash desenvolve projetos de Arquitetura Residencial e de Design de Interiores para clientes particulares e Corporativa, bem como atua na Gestão de Projetos e Administração de obra.`]
 }
 
+const photos = [{
+    src: QuemSomosImg,
+    width: 961,
+    height: 1281 
+}]
+
 const QuemSomos = () => {
 
     return (
-        <div className="quemsomos-fix expand">
             <div id="page" className="dark-mode" name="quemsomos">
                 <div className="text-center">
                     <Title title={content.title} />
@@ -24,14 +31,14 @@ const QuemSomos = () => {
                 
                 <div className="d-flex flex-row align-items-center justify-content-center">
                     <div className="my-flex-item">
-                        <Img image={QuemSomosImg} alt={"Modelo 3D Casa"} />
+
+                        <ImageSwiper photos={photos} />
                     </div>
                     <div className="my-flex-item">
                         <MainText text={content.text} />
                     </div>
                 </div>
             </div>
-        </div>
     );
 
 }

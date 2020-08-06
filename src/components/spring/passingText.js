@@ -5,6 +5,7 @@ import Typist from 'react-typist';
 import Title from '../../components/title.js';
 
 const content = {
+    background: '#303030',
     text: [`PROJETOS que reflitam a personalidade do cliente, seus desejos, suas histórias, memórias afetivas e sonhos para o futuro. Unimos as particularidades do cliente à identidade arquitetônica contemporânea do escritório.`,
            `SOLUÇÕES únicas e criativas que garantam o melhor desempenho dos espaços – funcionalidade, otimização de recursos, fluxos,  percepção de conforto e bem estar aos usuários.`,
            `Relação próxima ao nosso cliente com confiabilidade e transparência no processo. PESSOALIDADE no atendimento.`,
@@ -14,7 +15,7 @@ const content = {
 
 function AnimatedDivs (props) {
     return(
-        <div className="d-flex flex-column negative-margin">
+        <div className="d-flex flex-column">
           <div className="card-text-number">
             {props.number}
           </div>
@@ -32,22 +33,22 @@ function AnimatedDivs (props) {
 }
 
 const pages = [
-  ({ style }) => <animated.div style={{ ...style, border: '2px solid red' }}>
+  ({ style }) => <animated.div style={{ ...style, background: content.background  }}>
                      <AnimatedDivs number={"O que esperar de um projeto por Bianca Safidvash"} />
                  </animated.div>,
-  ({ style }) => <animated.div style={{ ...style, background: '#303030' }}>
+  ({ style }) => <animated.div style={{ ...style, background: content.background }}>
                     <AnimatedDivs number={1} text={content.text[0]} />
                 </animated.div>,
-  ({ style }) => <animated.div style={{ ...style, background: '#303030' }}>
+  ({ style }) => <animated.div style={{ ...style, background: content.background }}>
                      <AnimatedDivs number={2} text={content.text[1]} />
                 </animated.div>,
-  ({ style }) => <animated.div style={{ ...style, background: '#303030' }}>
+  ({ style }) => <animated.div style={{ ...style, background: content.background }}>
                     <AnimatedDivs number={3} text={content.text[2]} />
                  </animated.div>,
-  ({ style }) => <animated.div style={{ ...style, background: '#303030' }}>
+  ({ style }) => <animated.div style={{ ...style, background: content.background }}>
                     <AnimatedDivs number={4} text={content.text[3]} />
                  </animated.div>,
-  ({ style }) => <animated.div style={{ ...style, background: '#303030' }}>
+  ({ style }) => <animated.div style={{ ...style, background: content.background }}>
                     <AnimatedDivs number={5} text={content.text[4]} />
                  </animated.div>,
 ]
@@ -61,7 +62,7 @@ export default function PassingText() {
     leave: { opacity: 0, transform: 'translate3d(-100%,0,0)' },
   })
   return (
-    <div name={"projeto"} className="passing-text-container" >
+    <div >
       <div className="simple-trans-main" onClick={onClick}>
         {transitions.map(({ item, props, key }) => {
           const Page = pages[item]

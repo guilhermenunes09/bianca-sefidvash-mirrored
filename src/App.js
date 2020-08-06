@@ -24,9 +24,6 @@ import Footer from './components/footer.js';
 import { Link, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll';
 import Parallax from './components/parallax.js';
 
-
-
-
 const App = () => {
 
   //<Parallax />
@@ -40,31 +37,31 @@ const App = () => {
   return (
     <>
       <header className="App-header"></header>
+
       <div id="firstContainer" className="container-fluid fill-height">
        
         <Router>
             <Menu />
-            
-            <div className="container main-container">
-              <Switch>
-                <Route exact path="/"><Home /></Route>
-                <Route path="/quemsomos"><QuemSomos /></Route>
-                <Route path="/trajetoria"><Trajetoria /></Route>
-                <Route path="/projeto"><Projeto /></Route>
-                <Route path="/forcas"><Forcas /></Route>
-                <Route path="/servicos"><Servicos /></Route>
-                <Route path="/residencial"><Residencial /></Route>
-                <Route path="/interiores"><Interiores /></Route>
-                <Route path="/planejados"><Planejados /></Route>
-                <Route path="/funcional"><Funcional /></Route>
-                <Route path="/gerenciamento"><Gerenciamento /></Route>
-                <Route path="/depoimentos"><Depoimentos /></Route>
-                <Route path="/contato"><Contato /></Route>
-              </Switch>
-            </div>
-
+              <div className="main-container">
+                <Switch>
+                  <Route exact path="/"><Home /></Route>
+                  <Route path="/quemsomos"><QuemSomos /></Route>
+                  <Route path="/trajetoria"><Trajetoria /></Route>
+                  <Route path="/projeto"><Projeto /></Route>
+                  <Route path="/forcas"><Forcas /></Route>
+                  <Route path="/servicos"><Servicos /></Route>
+                  <Route path="/residencial"><Residencial /></Route>
+                  <Route path="/interiores"><Interiores /></Route>
+                  <Route path="/planejados"><Planejados /></Route>
+                  <Route path="/funcional"><Funcional /></Route>
+                  <Route path="/gerenciamento"><Gerenciamento /></Route>
+                  <Route path="/depoimentos"><Depoimentos /></Route>
+                  <Route path="/contato"><Contato /></Route>
+                </Switch>
+              </div>
             <Footer />
         </Router>
+        
       </div>
     </>
   );

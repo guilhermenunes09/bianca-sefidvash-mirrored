@@ -20,9 +20,9 @@ const content = {
 
 const Projeto = () => {
     return(
-        <div id="page">
+        <div id="page" name={"projeto"} >
             <div className="d-flex flex-row justify-content-center align-items-center">
-                <div style={{height: '300px'}} className="container">
+                <div style={{height: '300px'}}>
                     <PassingText />
                 </div>
             </div>

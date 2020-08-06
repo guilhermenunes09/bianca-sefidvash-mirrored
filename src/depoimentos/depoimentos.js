@@ -3,8 +3,12 @@ import Title from '../components/title.js';
 
 const Depoimentos = () => {
     return(
-        <div className="container" id="page">
-           <Title title={"Depoimentos"} name="depoimentos" />
+        <div id="page" name={"depoimentos"}>
+
+            <div className="text-center">
+                <Title title={"Depoimentos"} />
+            </div>
+
            <p>
             ”Excelente profissional com muita criatividade e
             empatia para atender as necessidades dos clientes.”
