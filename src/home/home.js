@@ -76,9 +76,10 @@ const Home = () => {
             <Quemsomos />
             <Trajetoria />
             <ServicosIcons />
-            <ImageParallax />
+            <ImageParallax gallery />
             <Forcas />
             <Projeto />
+            <ImageParallax />
             <Depoimentos />
 
      

@@ -4,7 +4,7 @@ import ImgParallaxInteriores from '../imgs/parallax/parallax-interiores-1.jpg';
 import './imageParallax.css';
 import Gallery from '../components/gallery.js';
 
-function ImageParallax () {
+function ImageParallax (props) {
     return(
         <div id="page" >
             <Parallax
@@ -13,11 +13,16 @@ function ImageParallax () {
                 bgImageAlt="the dog"
                 strength={-500}
             >
-                <div className="d-flex flex-row justify-content-center align-items-center" style={{ minHeight: '100vh', paddingTop: '2em', paddingBottom: '2em' }} >
-                    <div className="my-flex-item" style={{backgroundColor: 'white', width:'700px'}}>
-                        <Gallery />
+                {props.gallery && (
+                    <div className="d-flex flex-row justify-content-center align-items-center" style={{ minHeight: '100vh', paddingTop: '2em', paddingBottom: '2em' }} >
+                        <div className="my-flex-item" style={{backgroundColor: 'white', width:'700px'}}>
+                            <Gallery />
+                        </div>
                     </div>
-                </div>
+                )}
+                {!props.gallery && (
+                    <div style={{minHeight:'100vh'}} />
+                )}
                 
             </Parallax>
         </div>

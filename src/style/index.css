@@ -21,7 +21,7 @@
 
 /* width */
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 20px;
 }
 
 /* Track */
@@ -36,13 +36,15 @@
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #555; 
+  background: #000; 
 }
 
 html, body {
   font-family: ChaletLondon, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: medium;
+
   overflow-x: hidden;
+
 }
 
 body {
@@ -177,6 +179,10 @@ li {
 
 .dark-mode p {
   color: rgb(207, 207, 207);
+}
+
+.swipe {
+  width: 100%;
 }
 
 

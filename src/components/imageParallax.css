@@ -1,6 +1,6 @@
 .react-parallax {
-    overflow: hidden !important;
     padding-left: inherit !important;
     padding-right: inherit !important;
+    margin-top: -64px;
     box-shadow: inset 0px 0px 60px 60px rgba(0,0,0,0.9);
 }
