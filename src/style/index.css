@@ -21,7 +21,7 @@
 
 /* width */
 ::-webkit-scrollbar {
-  width: 20px;
+  width: 15px;
 }
 
 /* Track */
@@ -60,6 +60,7 @@ body {
   opacity: 1;
 }
 
+
 .fill-height {
   min-height: 100vh !important;
   height:auto !important; /* cross-browser */
@@ -84,15 +85,18 @@ body {
 
 h1 {
   font-family: 'Roboto', sans-serif;
-  font-weight: 400;
+  font-weight: 200;
   text-transform: uppercase;
   padding-bottom: 30px;
-  text-shadow: 0px -1px 3px rgba(0,0,0,0.83);
 }
 
 p {
   color: #4f6365;
   font-family: 'Roboto', sans-serif;
+}
+
+.text {
+  padding: 1.4em;
 }
 
 li {
@@ -106,7 +110,6 @@ li {
 
 .my-flex-item {
   width: 400px;
-  border: 3px dotted red;
 }
 .my-flex-item-sm {
   width: 21px;
@@ -184,6 +187,27 @@ li {
   width: 100%;
 }
 
+.vertical-div-left {
+  top: -5px;
+  left: 0px;
+  position: fixed;
+  width: 10px;
+  height: 110%;
+  z-index: 100;
+
+  background-color: black
+}
+
+
+.vertical-div-right {
+  top: 0;
+  right: 0px;
+  position: fixed;
+  width: 10px;
+  height: 100%;
+  z-index: 100;
+  background-color: black;
+}
 
 
 

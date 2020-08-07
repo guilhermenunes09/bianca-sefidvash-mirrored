@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from "react-router-dom";
 
-import logoRed from '../imgs/logo_red.png';
+import logoRed from '../imgs/logo-red-light.svg';
 import { Link as LinkSame, scroller, Events } from 'react-scroll'
 
 import './menu.css';
@@ -19,8 +19,9 @@ const Menu = props => {
 
             <nav className="navbar navbar-expand-sm bg-dark navbar-dark">
 
-                <img src={logoRed} alt="Logo" style={{width: '50px'}} />
-
+                <Link exact to="/">
+                    <img src={logoRed} alt="Logo" style={{width: '50px'}} />
+                </Link>
                 <button className="custom-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample09" aria-controls="navbarsExample09" aria-expanded={!isNavCollapsed ? true : false} aria-label="Toggle navigation" onClick={handleNavCollapse}>
                     <span className="navbar-toggler-icon"></span>
                 </button>

@@ -38,9 +38,9 @@ const App = () => {
   return (
     <>
       <header className="App-header"></header>
-
+      <div className="vertical-div-left" ></div>
+      <div className="vertical-div-right" ></div>
       <div id="firstContainer" className="container-fluid fill-height">
-       
         <Router>
             <Menu />
               <div className="main-container">

@@ -11,8 +11,6 @@ import './quemsomos.css';
 
 const content = {
     title: `Quem Somos`,
-    text: [`O escritório Bianca Sefidvash Arquitetura + Interiores, comandado pela própria arquiteta, tem a região de Campinas/SP sua principal área de atuação.`,
-    `Formada pela PUC, em Porto Alegre/RS, a arquiteta Bianca Sefidvash desenvolve projetos de Arquitetura Residencial e de Design de Interiores para clientes particulares e Corporativa, bem como atua na Gestão de Projetos e Administração de obra.`]
 }
 
 const photos = [{
@@ -25,19 +23,22 @@ const QuemSomos = () => {
 
     return (
             <div id="page" className="dark-mode" name="quemsomos">
-                <div className="text-center">
-                    <Title title={content.title} />
-                </div>
-                
-                <div className="d-flex flex-row align-items-center justify-content-center">
-                    <div className="my-flex-item">
+        
+                    <div className="text-center">
+                        <Title title={content.title} />
+                    </div>
+                    
+                    <div className="d-flex flex-row align-items-center justify-content-center">
+                        <div className="my-flex-item">
 
-                        <ImageSwiper photos={photos} />
+                            <ImageSwiper photos={photos} />
+                        </div>
+                        <div className="my-flex-item text">
+                            <p>O escritório <strong>Bianca Sefidvash Arquitetura + Interiores</strong>, comandado pela própria arquiteta, tem a região de Campinas/SP sua principal área de atuação.</p>
+                            <p>Formada pela PUC, em Porto Alegre/RS, a arquiteta Bianca Sefidvash desenvolve projetos de <strong>Arquitetura Residencial</strong> e de <strong>Design de Interiores</strong> para clientes particulares e Corporativa, bem como atua na Gestão de Projetos e Administração de obra.</p>
+                        </div>
                     </div>
-                    <div className="my-flex-item">
-                        <MainText text={content.text} />
-                    </div>
-                </div>
+       
             </div>
     );
 

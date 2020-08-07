@@ -1,8 +1,6 @@
 .submenu {
     position: absolute;
     background-color: black;
-    
-    font-size: 1em;
     left: 50%;
     transform: translateX(-50%);
     bottom: 63px;
@@ -16,15 +14,25 @@
     
 }
 
-.submenu-item {
+.item-sticky {
+    padding: 1em;
+    text-rendering: geometricPrecision;
+    white-space: nowrap;
+    cursor: pointer;   
+}
+.item-sticky:hover {
+    text-shadow: 0.1px 0.1px 0.5px black, 0 0 0.05em black, 0 0 0.05em black;
+}
+
+.item-nosticky {
     padding: 1em;
     text-rendering: geometricPrecision;
     white-space: nowrap;
     cursor: pointer;
-   
+
 }
-.submenu-item:hover {
-    color: white;
+.item-nosticky:hover {
+    text-shadow: 0.1px 0.1px 0.5px white, 0 0 0.05em white, 0 0 0.05em white;
 }
 
 .submenu-sticky {
@@ -34,7 +42,6 @@
     min-width: 100%;
     z-index: 200;
     background-color: black;
-    font-size: 1em;
     bottom: 63px;
     height: 35px;
     max-width: 80%;

@@ -1,6 +1,24 @@
 
 .mainLogo {
     margin-top: -100px;
+
+}
+
+.logoWrap {
+    position: absolute;
+    top: 60%;
+}
+
+.home-background {
+    position: absolute;
+    top:0;
+    left: 0;
+    height: 150%;
+    width: 100%;
+    background-image: url('../imgs/backgroundhome-07-07-07.svg');
+    z-index: -1;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .verticalHorizontal {

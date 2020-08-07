@@ -7,6 +7,7 @@ import GerenciamentoImg3 from './img/gerenciamento-3.jpg';
 import GerenciamentoImg4 from './img/gerenciamento-4.png';
 
 import ImageSwiper from '../components/swiper/imageSwiper';
+import Items from '../components/list/items.js';
 
 import MainText from '../components/mainText.js';
 import Title from '../components/title.js';
@@ -46,10 +47,30 @@ const Gerenciamento = () => {
             <div className="text-center">
                 <Title title={content.c1.title} />
             </div>
+            <div className="container">
+                <div className="d-flex flex-row align-items-start justify-content-center pl-4 ml-4">
+                    <div className="ml-4 d-flex flex-column align-items-start justify-content-center mb-4">
+                        <Items item={"Diagnóstico"} />
+                        <Items item={"Planejamento"} />
+                        <Items item={"Controle Físico-Financeiro"} />
+                        <Items item={"Homologação de Fornecedores"} />
+                        <Items item={"Controle de Qualidade"}/>
+                    </div>
+                    <div style={{whiteSpace:'break-spaces'}} className="d-flex flex-column align-items-start justify-content-center mb-4">
+                        <Items item={"Orçamento"} />
+                        <Items item={"Acompanhamento"} />
+                        <Items item={"Administração da Obra"} />
+                        <Items item={"Compatibilização de Projetos Complementares"} />
+                        <Items item={"Consultoria Específica"}/>
+                    </div>
+                </div>
+            </div>
+            
             <div className="d-flex flex-lg-row flex-md-row flex-sm-column align-items-sm-center align-items-md-start justify-content-center">
                 <div className="my-flex-item swipe">
                     <ImageSwiper photos={photos1} />
                 </div>
+
             </div>
 
             <div className="d-flex flex-lg-row flex-md-row flex-sm-column align-items-sm-center align-items-md-start justify-content-center">

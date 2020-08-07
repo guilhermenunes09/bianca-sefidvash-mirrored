@@ -35,7 +35,7 @@ const Trajetoria = () => {
                 <div className="my-flex-item">
                     <ImageSwiper photos={photos} />
                 </div>
-                <div className="my-flex-item">
+                <div className="my-flex-item text">
                     <MainText text={content.text} />
                 </div>
             </div>
