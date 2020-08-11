@@ -47,3 +47,8 @@
 .btn-primary.focus, .btn-primary:focus {
     box-shadow: 0 0 0 0.2rem rgb(171 171 171 / 50%);
 }
+
+.menu-style {
+    background-color: white;
+
+}

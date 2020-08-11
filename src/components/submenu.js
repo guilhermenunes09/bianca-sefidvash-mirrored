@@ -1,13 +1,29 @@
 import React, { useEffect, useState, useRef, useCallback } from 'react';
 import "./submenu.css";
-import { Link as LinkSame, scroller, Events } from 'react-scroll'
+import { Link as LinkSame, animateScroll, scroller, Events } from 'react-scroll'
 import { useSpring, useTransition, animated, config } from 'react-spring';
 import { Handle } from 'rc-slider';
 import { withRouter } from 'react-router-dom/cjs/react-router-dom.min';
 import logo from '../imgs/logo-red-light.svg';
 import menuicon from '../imgs/iconmonstr-menu-5.svg';
+import goup from '../imgs/goup.svg';
+
+
 
 function SubMenuDom (props) {
+
+    let scroll = animateScroll;
+
+    useEffect(()=>{
+        Events.scrollEvent.register('begin', function(to, element) {
+            console.log('begin', arguments);
+          });
+    });
+
+    function scrollToTop () {
+        scroll.scrollToTop();
+    }
+
     return(
         <div style={{width: '100%'}}>
             <div className="d-flex flex-row justify-content-between align-items-center">
@@ -43,9 +59,11 @@ function SubMenuDom (props) {
                     </LinkSame>
                 </div>
                 {!!props.sticky && (
-                <div className={"pr-3"}>
-                    <img src={menuicon} />
-                </div>
+                <LinkSame onClick={scrollToTop} smooth={true}>
+                    <div className={"pr-3"}>
+                        <img src={goup} width={20} />
+                    </div>
+                </LinkSame>
                 )}
             </div>
         </div>

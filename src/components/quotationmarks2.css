@@ -1,0 +1,27 @@
+blockquote{
+    border-left:none
+}
+
+.quote-badge{
+    background-color: rgba(0, 0, 0, 0.2);   
+}
+
+.quote-box{
+    overflow: hidden;
+    border-radius: 17px;
+    color:red;
+    max-width: 90vh;
+}
+
+.quotation-mark{
+    
+    font-weight: bold;
+    font-size:100px;
+    color: #afafaf;
+    font-family: "Times New Roman", Georgia, Serif;
+    
+}
+
+.quote-text{
+    font-size: 19px;
+}

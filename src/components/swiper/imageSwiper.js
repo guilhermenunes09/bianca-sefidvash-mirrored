@@ -3,7 +3,7 @@ import { render } from "react-dom";
 import Gallery from "react-photo-gallery";
 import Carousel, { Modal, ModalGateway } from "react-images";
 
-function SimpleSwiper(props) {
+function ImageSwiper(props) {
   const [currentImage, setCurrentImage] = useState(0);
   const [viewerIsOpen, setViewerIsOpen] = useState(false);
 
@@ -38,4 +38,4 @@ function SimpleSwiper(props) {
   );
 }
 
-export default SimpleSwiper;
+export default ImageSwiper;

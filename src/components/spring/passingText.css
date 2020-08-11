@@ -10,7 +10,6 @@
     top:0;
     left: 0;
     background: #303030;
-    border: 5px dotted blue;
 }
 
 .passing-text-container {
@@ -53,11 +52,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 80vh;
 }
 
 .arrow {
     position: absolute;
-    top: 50%;
+    bottom: 10%;
     right: 60px;
     filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(125deg) brightness(118%) contrast(119%);
 }

@@ -6,19 +6,19 @@ import {
 } from "react-router-dom";
 import Menu from './components/menu.js';
 
-import Home from './home/home.js';
-import QuemSomos from './quemsomos/quemsomos.js';
-import Trajetoria from './trajetoria/trajetoria.js';
-import Projeto from './projeto/projeto.js';
-import Forcas from './forcas/forcas.js';
-import Servicos from './servicos/servicos.js';
-import Residencial from './residencial/residencial.js';
-import Interiores from './interiores/interiores.js';
-import Planejados from './planejados/planejados.js';
-import Funcional from './funcional/funcional.js';
-import Gerenciamento from './gerenciamento/gerenciamento.js';
-import Depoimentos from './depoimentos/depoimentos.js';
-import Contato from './contato/contato.js';
+import Home from './pages/home/home.js';
+import QuemSomos from './pages/quemsomos/quemsomos.js';
+import Trajetoria from './pages/trajetoria/trajetoria.js';
+import Projeto from './pages/projeto/projeto.js';
+import Forcas from './pages/forcas/forcas.js';
+import Servicos from './pages/servicos/servicos.js';
+import Residencial from './pages/residencial/residencial.js';
+import Interiores from './pages/interiores/interiores.js';
+import Planejados from './pages/planejados/planejados.js';
+import Funcional from './pages/funcional/funcional.js';
+import Gerenciamento from './pages/gerenciamento/gerenciamento.js';
+import Depoimentos from './pages/depoimentos/depoimentos.js';
+import Contato from './pages/contato/contato.js';
 import Footer from './components/footer.js';
 import './components/background/background.css';
 

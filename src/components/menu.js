@@ -26,13 +26,11 @@ const Menu = props => {
                     <span className="navbar-toggler-icon"></span>
                 </button>
 
-                
-
                 <ul className={`${isNavCollapsed ? 'collapse' : ''} navbar-collapse navbar-nav`} id="navbarsExample09">
-                    <li className="nav-item ml-auto"><Link to="/">Início</Link></li>
-                    <li><Link to="/servicos">Serviços</Link></li>
-                    <li><Link to="/gerenciamento">Gerenciamento</Link></li>
-                    <li><Link to="/contato">Contato</Link></li>
+                        <li className="nav-item ml-auto"><Link to="/">Início</Link></li>
+                        <li><Link to="/servicos">Serviços</Link></li>
+                        <li><Link to="/gerenciamento">Gerenciamento</Link></li>
+                        <li><Link to="/contato">Contato</Link></li>
                 </ul>
             </nav>
          </>

@@ -29,7 +29,7 @@ function ServicosIcons () {
 
     return(
             <div id="page" >
-                <div className="d-flex flex-row justify-content-center align-items-center">
+                <div className="d-flex flex-row flex-wrap justify-content-center align-items-center">
                     <Icon image={ImgHouseGlass} label={"Projetos de Arquitetura \nResidencial"} />
                     <Icon image={ImgKidsStudyingFromHome} label={"Design de Interiores"} />
                     <Icon image={ImgFuncional} label={`Arquitetura Funcional \nde Performance`} />

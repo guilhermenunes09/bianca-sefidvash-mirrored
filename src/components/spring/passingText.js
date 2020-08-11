@@ -22,7 +22,7 @@ function AnimatedDivs (props) {
           </div>
           <div>
             {props.text && (
-                <div style={{width: "500px"}} className="card-text">  
+                <div className="card-text">  
                   <Typist delay={1500} avgTypingDelay={20} blink={true}>
                       {props.text}
                   </Typist>

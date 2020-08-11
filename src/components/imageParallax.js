@@ -2,7 +2,7 @@ import React from 'react';
 import { Parallax, Background } from 'react-parallax';
 import ImgParallaxInteriores from '../imgs/parallax/parallax-interiores-1.jpg';
 import './imageParallax.css';
-import Gallery from '../components/gallery.js';
+import Gallery from './gallery.js';
 
 function ImageParallax (props) {
     return(
