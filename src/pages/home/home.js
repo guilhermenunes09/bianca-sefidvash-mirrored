@@ -26,15 +26,6 @@ import Quote from '../../components/quotationmarks.js';
 
 const Home = () => {
 
-    // Deactivate Scrolling
-    useEffect(()=> {
-        //targetElement = document.querySelector('#body');
-        //disableBodyScroll(targetElement);
-        return () => {
-            //Activate again
-            //enableBodyScroll(targetElement);
-        }
-    });
 
     const props = useSpring(
     {
