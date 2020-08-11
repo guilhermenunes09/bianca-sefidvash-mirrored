@@ -20,9 +20,19 @@
 
 .footer a {
     text-decoration: none;
-    color: rgb(196, 196, 196);
+    color: grey;
 }
 
 .footer a:hover {
-    color: white;
+    color: white !important;
+}
+
+.social-networks {
+    padding: 10px;
+    -webkit-filter: invert(100%); /* safari 6.0 - 9.0 */
+    filter: invert(100%);
+}
+
+.sn {
+    padding: 10px;
 }

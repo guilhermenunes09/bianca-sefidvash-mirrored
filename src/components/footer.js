@@ -4,6 +4,9 @@ import './footer.css';
 import LogoInverted from '../imgs/logo_inverted.svg';
 import { Link as LinkSame, scroller, animateScroll, Events } from 'react-scroll';
 import { Link, Redirect } from "react-router-dom";
+import iconFacebook from '../pages/contato/img/iconmonstr-facebook-4.svg';
+import iconInstagram from '../pages/contato/img/iconmonstr-instagram-14.svg';
+import iconPinterest from '../imgs/pinterest_icon.svg';
 
 function Footer () {
     const currentYear = () => {
@@ -22,11 +25,11 @@ function Footer () {
     }
     return(
         <div className="footer">
-            <div className="d-flex flew-row justify-items-between">
+            <div className="d-flex flew-row flex-wrap justify-content-between align-items-end">
                 <div className="flex-fill" style={{width: '300px'}}>
                     <img src={LogoInverted} width={200} />
                 </div>
-                <div className="flex-fill" style={{width: '300px'}}>
+                <div className="flex-fill text-center" >
                     <ul>
                         <LinkSame exact to="/contato" spy={true}><li>Quem Somos</li></LinkSame>
                         <LinkSame to="trajetoria"><li>Trajetória</li></LinkSame>
@@ -38,8 +41,19 @@ function Footer () {
                         <Link to="contato"><li>Contato</li></Link>
                     </ul>
                 </div>
-                <div className="flex-fill" style={{width: '300px'}}>
-                    Teste 3
+
+                <div className="flex-fill social-networks text-right" style={{width: '300px'}}>
+                    Siga-nos nas redes sociais:
+                    <a target="_blank" title="follow me on facebook" className="sn"
+                    href="https://www.facebook.com/ArquitetaBiancaSefidvash/">
+                        <img alt="follow me on facebook" src={iconFacebook} border={0} /></a>
+                    <a target="_blank" title="follow me on instagram" className="sn"
+                    href="https://www.instagram.com/arquiteta_biancasefidvash">
+                        <img alt="follow me on instagram" src={iconInstagram} border={0} /></a>
+                    <a target="_blank" title="follow me on pinterest" className="sn"
+                    href="https://www.pinterest.com/arquiteta_biancasefidvash"> 
+                        <img alt="follow me on pinterest" style={{marginLeft: '-10px'}} className="sn"
+                        src={iconPinterest} border={0} width={45} /></a>
                 </div>
             </div>
 
