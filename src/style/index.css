@@ -225,5 +225,26 @@ li {
   background-color: black;
 }
 
+.side-nav {
+  height: 100%; /* 100% Full-height */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  right: 0;
+  background-color: white; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  padding-left: 10px;
+  font-size: 1.2em;
+  color: white;
+  list-style: none;
+  z-index:1000;
+  border-left: 7px solid black;
+}
+
+.side-nav-button {
+  cursor: pointer;
+  z-index: 1001;
+}
 
 

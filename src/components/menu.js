@@ -1,17 +1,30 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from "react-router-dom";
+import { Link, withRouter } from "react-router-dom";
 
 import logoRed from '../imgs/logo-red-light.svg';
-import { Link as LinkSame, scroller, Events } from 'react-scroll'
+import { Link as LinkSame, scroller, Events } from 'react-scroll';
+import menuicon from '../imgs/iconmonstr-menu-5.svg';
+import { useSpring, animated } from 'react-spring';
 
 import './menu.css';
 
 const Menu = props => {
 
- 
-    const [isNavCollapsed, setIsNavCollapsed] = useState(true);
 
+    
+    const [isNavCollapsed, setIsNavCollapsed] = useState(true);
     const handleNavCollapse = () => setIsNavCollapsed(!isNavCollapsed);
+
+    const [sideNav, setSideNav] = useState(false);
+
+    const sideStyle = useSpring({
+        duration: 200,
+        width: sideNav ? 300 : 0,
+    })
+
+    function handleSideMenu () {
+        setSideNav(sideNav => !sideNav)
+    }
 
 
     return(
@@ -31,7 +44,15 @@ const Menu = props => {
                         <li><Link to="/servicos">Serviços</Link></li>
                         <li><Link to="/gerenciamento">Gerenciamento</Link></li>
                         <li><Link to="/contato">Contato</Link></li>
+                        <li className="side-nav-button" onClick={() => handleSideMenu()}><img src={menuicon} /></li>
                 </ul>
+
+                <animated.div style={sideStyle} className="side-nav">
+                    <li className="nav-item ml-auto"><Link to="/">Início</Link></li>
+                    <li><Link to="/servicos">Serviços</Link></li>
+                    <li><Link to="/gerenciamento">Gerenciamento</Link></li>
+                    <li><Link to="/contato">Contato</Link></li>
+                </animated.div>
             </nav>
          </>
     );

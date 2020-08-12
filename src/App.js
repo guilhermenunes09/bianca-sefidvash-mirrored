@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import {
   BrowserRouter as Router,
   Switch,
-  Route
+  Route,
 } from "react-router-dom";
 import Menu from './components/menu.js';
 
@@ -26,14 +26,8 @@ import { Link, Element, Events, animateScroll as scroll, scrollSpy, scroller } f
 import Parallax from './components/parallax.js';
 
 const App = () => {
-
   //<Parallax />
   //<Parallax numberLines={2} x1={-1363} x2={270} y1={1619} translateX={277} rotate={18}/>
-  useEffect(()=>{
-    Events.scrollEvent.register('begin', function(to, element) {
-      console.log('begin', arguments);
-    });
-  });
 
   return (
     <>

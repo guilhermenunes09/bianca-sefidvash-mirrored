@@ -9,13 +9,17 @@
 
 .footer ul {
     list-style-type: none;
+
+}
+
+.footer .menu {
+    cursor: pointer;
 }
 
 .footer li {
   cursor: pointer;
-  max-width: 200px;
-  background-color: transparent;
-  font-size: 1em;
+  display: list-item;
+
 }
 
 .footer a {
@@ -35,4 +39,12 @@
 
 .sn {
     padding: 10px;
+}
+
+.border-test {
+    border: 2px dotted red;
+}
+
+.copyright {
+    padding-top:20px;
 }
