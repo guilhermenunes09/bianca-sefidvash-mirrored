@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React, {useEffect, useContext} from 'react';
 
 import './contato.css';
 
@@ -15,9 +15,16 @@ import Title from '../../components/title.js';
 import Logo from "../../imgs/logo.png";
 
 import Img from '../../components/img.js';
+import { setMenuContext } from '../../contexts/menuContext.js';
+
 
 
 const Contato = () => {
+
+    const setMenu = useContext(setMenuContext);
+    useEffect(()=>{
+        setMenu(false);
+    },[]);
 
     let targetElement = null;
 

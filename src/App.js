@@ -22,12 +22,17 @@ import Contato from './pages/contato/contato.js';
 import Footer from './components/footer.js';
 import './components/background/background.css';
 
+import MenuProvider from './contexts/menuContext.js';
+
 import { Link, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll';
 import Parallax from './components/parallax.js';
+
+
 
 const App = () => {
   //<Parallax />
   //<Parallax numberLines={2} x1={-1363} x2={270} y1={1619} translateX={277} rotate={18}/>
+
 
   return (
     <>
@@ -35,26 +40,31 @@ const App = () => {
       <div className="vertical-div-left" ></div>
       <div className="vertical-div-right" ></div>
       <div id="firstContainer" className="container-fluid fill-height">
+        
         <Router>
+        <MenuProvider>
             <Menu />
               <div className="main-container">
                 <Switch>
-                  <Route exact path="/"><Home /></Route>
-                  <Route path="/quemsomos"><QuemSomos /></Route>
-                  <Route path="/trajetoria"><Trajetoria /></Route>
-                  <Route path="/projeto"><Projeto /></Route>
-                  <Route path="/forcas"><Forcas /></Route>
-                  <Route path="/servicos"><Servicos /></Route>
-                  <Route path="/residencial"><Residencial /></Route>
-                  <Route path="/interiores"><Interiores /></Route>
-                  <Route path="/planejados"><Planejados /></Route>
-                  <Route path="/funcional"><Funcional /></Route>
-                  <Route path="/gerenciamento"><Gerenciamento /></Route>
-                  <Route path="/depoimentos"><Depoimentos /></Route>
-                  <Route path="/contato"><Contato /></Route>
+                  
+                    <Route exact path="/"><Home /></Route>
+                    <Route path="/quemsomos"><QuemSomos /></Route>
+                    <Route path="/trajetoria"><Trajetoria /></Route>
+                    <Route path="/projeto"><Projeto /></Route>
+                    <Route path="/forcas"><Forcas /></Route>
+                    <Route path="/servicos"><Servicos /></Route>
+                    <Route path="/residencial"><Residencial /></Route>
+                    <Route path="/interiores"><Interiores /></Route>
+                    <Route path="/planejados"><Planejados /></Route>
+                    <Route path="/funcional"><Funcional /></Route>
+                    <Route path="/gerenciamento"><Gerenciamento /></Route>
+                    <Route path="/depoimentos"><Depoimentos /></Route>
+                    <Route path="/contato"><Contato /></Route>
+                 
                 </Switch>
               </div>
             <Footer />
+            </MenuProvider>
         </Router>
         
       </div>

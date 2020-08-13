@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect, useContext} from 'react';
 
 import MainText from '../../components/mainText.js';
 import Title from '../../components/title.js';
@@ -8,6 +8,7 @@ import NossoServicosImg1 from './img/nossosservicos-01.svg';
 import Residencial from '../residencial/residencial.js';
 import Interiores from '../interiores/interiores.js';
 import Funcional from '../funcional/funcional.js';
+import { setMenuContext } from '../../contexts/menuContext.js';
 
 import Img from '../../components/img.js';
 
@@ -17,6 +18,12 @@ const content = {
 }
 
 const Servicos = () => {
+
+    const setMenu = useContext(setMenuContext);
+    useEffect(()=>{
+        setMenu(false);
+    },[]);
+
     return(
         <div id="page">
             <div className="text-center">

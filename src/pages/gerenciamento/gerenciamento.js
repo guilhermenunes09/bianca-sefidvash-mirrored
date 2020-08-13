@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect, useContext} from 'react';
 
 import Img from '../../components/img.js';
 import GerenciamentoImg1 from './img/gerenciamento-1.jpg';
@@ -11,6 +11,8 @@ import Items from '../../components/list/items.js';
 
 import MainText from '../../components/mainText.js';
 import Title from '../../components/title.js';
+import { setMenuContext } from '../../contexts/menuContext.js';
+
 
 const photos1 = [
     {src:GerenciamentoImg1,
@@ -42,6 +44,12 @@ const content = {
 }
 
 const Gerenciamento = () => {
+
+    const setMenu = useContext(setMenuContext);
+    useEffect(()=>{
+        setMenu(false);
+    },[]);
+
     return(
         <div id="page">
             <div className="text-center">

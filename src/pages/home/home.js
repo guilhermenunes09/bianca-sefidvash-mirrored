@@ -1,4 +1,4 @@
-import React, {useEffect } from 'react';
+import React, {useEffect, useContext, useState } from 'react';
 import logo from '../../imgs/logo.png';
 import './home.css';
 
@@ -20,12 +20,17 @@ import Parallax from '../../components/parallax';
 import ImageParallax1 from '../../imgs/parallax/parallax-1.jpg';
 import Gallery from '../../components/gallery.js';
 import Quote from '../../components/quotationmarks.js';
+import { setMenuContext } from '../../contexts/menuContext.js';
 
 
 //<svg id="Camada_1" data-name="Camada 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1190.64 841.92"><defs><style>.cls-1{fill:none;stroke:#1f140f;stroke-miterlimit:10;stroke-width:9px;}</style></defs><line className="cls-1" x1="-10.74" y1="606.07" x2="799.9" y2="-8.42"/><line className="cls-1" x1="918.24" y1="-3.21" x2="918.24" y2="842.4"/><line className="cls-1" x1="948.95" y1="-6.88" x2="1149.66" y2="844.82"/></svg>
 
 const Home = () => {
 
+    const setMenu = useContext(setMenuContext);
+    useEffect(()=>{
+        setMenu(false);
+    },[]);
 
     const props = useSpring(
     {
