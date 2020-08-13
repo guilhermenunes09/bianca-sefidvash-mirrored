@@ -1,7 +1,7 @@
 import React from 'react';
 
 import './footer.css';
-import LogoInverted from '../imgs/logo_inverted.svg';
+import LogoInverted from '../imgs/logo_footer.png';
 import { Link as LinkSame, scroller, animateScroll, Events } from 'react-scroll';
 import { Link, Redirect } from "react-router-dom";
 import iconFacebook from '../pages/contato/img/iconmonstr-facebook-4.svg';

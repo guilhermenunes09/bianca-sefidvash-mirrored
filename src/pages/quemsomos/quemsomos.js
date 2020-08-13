@@ -64,7 +64,7 @@ const QuemSomos = () => {
                                 <ImageSwiper photos={photos} />
                             </div>
                             <div className="my-flex-item text">
-                                <p>O escritório <strong>Bianca Sefidvash Arquitetura + Interiores</strong>, comandado pela própria arquiteta, tem a região de Campinas/SP sua principal área de atuação.</p>
+                                <p>O escritório <strong>Bianca Sefidvash Arquitetura + Interiores</strong>, comandado pela própria arquiteta na região de Campinas/SP. Sua principal área de atuação.</p>
                                 <p>Formada pela PUC, em Porto Alegre/RS, a arquiteta Bianca Sefidvash desenvolve projetos de <strong>Arquitetura Residencial</strong> e de <strong>Design de Interiores</strong> para clientes particulares e Corporativa, bem como atua na Gestão de Projetos e Administração de obra.</p>
                             </div>
                         </animated.div>

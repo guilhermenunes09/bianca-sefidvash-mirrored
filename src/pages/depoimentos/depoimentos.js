@@ -23,12 +23,12 @@ const Depoimentos = () => {
             </div>
 
             <Fade delay={500} >
-                <div className="d-flex justify-content-center flex-wrap">
-                    <div className="container">
+                <div className="d-flex flex-row justify-content-center flex-wrap">
+
                         <Quote2 quotation={content.quote1} author={""} />
                         <Quote2 quotation={content.quote2} author={""} />
                         <Quote2 quotation={content.quote3} author={""} />
-                    </div>
+
                 </div>
             </Fade>
         </div>

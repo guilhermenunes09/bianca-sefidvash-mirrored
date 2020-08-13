@@ -10,8 +10,8 @@ function DynaPlane ({text}) {
 
 
     const props = useSpring({
-        color: index ? 'black' : 'grey',
-        transform: index ? 'perspective(600px) rotateY(0deg)' : 'perspective(600px) rotateY(20deg)',
+        color: index ? 'black' : 'lightgray',
+        transform: index ? 'perspective(600px) rotateY(0deg)' : 'perspective(600px) rotateY(45deg)',
         boxShadow: '2px 2px 5px -1px rgba(0,0,0,0.75)',
     });
 

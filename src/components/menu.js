@@ -63,10 +63,10 @@ const Menu = () => {
 
     return(
         <>
-            <div className={menu ? 'invisible-bt' : 'side-nav-button button-menu' } onClick={() => handleSideMenu()}><img width={30} src={menuicon} /></div>
-            <div className={menu ? 'button-menu side-nav-button' : 'invisible-bt' }><img width={20} src={iconx} /> </div> 
+            <div className={menu ? 'invisible-bt' : 'side-nav-button button-menu' } onClick={() => handleSideMenu()}><img width={40} src={menuicon} /></div>
+            <div className={menu ? 'button-menu side-nav-button' : 'invisible-bt' }><img width={30} src={iconx} /> </div> 
             <nav className="navbar navbar-expand-sm bg-dark navbar-dark">
-                <Link exact to="/">
+                <Link className="invisible" exact to="/">
                     <img src={logoRed} alt="Logo" style={{width: '50px'}} />
                 </Link>
                 <button className="custom-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample09" aria-controls="navbarsExample09" aria-expanded={!isNavCollapsed ? true : false} aria-label="Toggle navigation" onClick={handleNavCollapse}>

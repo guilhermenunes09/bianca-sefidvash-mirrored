@@ -62,12 +62,12 @@ const Home = () => {
 
     return(
         <>
-            <SubMenu />
+
             <div className="home-background" />
             <div id="flexbox" className="fill-height d-flex justify-content-center align-items-center content-position home-zindex">
                 
                     <animated.div className="logoWrap" style={props}>
-                        <img className="mainLogo" src={logo} alt="Logo" style={{width: '300px'}} />
+                        <img className="mainLogo" src={logo} alt="Logo" style={{width: '450px'}} />
                     </animated.div>
                 
             </div>
