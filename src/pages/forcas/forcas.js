@@ -14,7 +14,7 @@ const content = {
 const Forcas = () => {
 
     return(
-        <div id="page" name={"forcas"} >
+        <div id="page" name={"forcas"} c >
             <div className="text-center">
                 <Title title={content.title} />
             </div>

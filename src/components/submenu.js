@@ -58,13 +58,7 @@ function SubMenuDom (props) {
                         </div>
                     </LinkSame>
                 </div>
-                {!!props.sticky && (
-                <LinkSame onClick={scrollToTop} smooth={true}>
-                    <div className={"pr-3"}>
-                        <img src={goup} width={20} />
-                    </div>
-                </LinkSame>
-                )}
+
             </div>
         </div>
     );

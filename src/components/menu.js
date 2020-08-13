@@ -63,6 +63,8 @@ const Menu = () => {
 
     return(
         <>
+            <div className={menu ? 'invisible-bt' : 'side-nav-button button-menu' } onClick={() => handleSideMenu()}><img width={30} src={menuicon} /></div>
+            <div className={menu ? 'button-menu side-nav-button' : 'invisible-bt' }><img width={20} src={iconx} /> </div> 
             <nav className="navbar navbar-expand-sm bg-dark navbar-dark">
                 <Link exact to="/">
                     <img src={logoRed} alt="Logo" style={{width: '50px'}} />
@@ -70,20 +72,19 @@ const Menu = () => {
                 <button className="custom-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample09" aria-controls="navbarsExample09" aria-expanded={!isNavCollapsed ? true : false} aria-label="Toggle navigation" onClick={handleNavCollapse}>
                     <span className="navbar-toggler-icon"></span>
                 </button>
-                <ul className={`${isNavCollapsed ? 'collapse' : ''} navbar-collapse navbar-nav`} id="navbarsExample09">
+                <ul className={`${isNavCollapsed ? 'collapse' : ''} navbar-collapse navbar-nav invisible`} id="navbarsExample09">
                         <li className="nav-item ml-auto"><Link to="/">Início</Link></li>
                         <li><Link to="/servicos">Serviços</Link></li>
                         <li><Link to="/gerenciamento">Gerenciamento</Link></li>
                         <li><Link to="/contato">Contato</Link></li>
-                        <li className={menu ? 'invisible' : 'side-nav-button' } onClick={() => handleSideMenu()}><img src={menuicon} /></li>
-                        <li className={menu ? 'side-nav-button' : 'invisible' }><img width={20} src={iconx} /> </li> 
                 </ul>
+
                 <animated.div style={sideStyle} className="side-nav">
-                    <div ref={sideNavRef} className="p-3 m-3 border-test">
-                    <li className="nav-item ml-auto"><Link to="/">Início</Link></li>
-                    <li><Link to="/servicos">Serviços</Link></li>
-                    <li><Link to="/gerenciamento">Gerenciamento</Link></li>
-                    <li><Link to="/contato">Contato</Link></li>
+                    <div ref={sideNavRef} className="p-3 m-3">
+                        <li className="nav-item ml-auto"><Link to="/">Início</Link></li>
+                        <li><Link to="/servicos">Serviços</Link></li>
+                        <li><Link to="/gerenciamento">Gerenciamento</Link></li>
+                        <li><Link to="/contato">Contato</Link></li>
                     </div>
                 </animated.div>
             </nav>
