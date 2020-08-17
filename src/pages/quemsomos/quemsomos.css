@@ -1,0 +1,8 @@
+.quemsomos-background {
+    background: url('./img/quemsomos-1-02.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100vh;
+    min-width: 600px !important;
+
+}

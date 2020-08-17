@@ -74,6 +74,7 @@ const Menu = () => {
                 </button>
                 <ul className={`${isNavCollapsed ? 'collapse' : ''} navbar-collapse navbar-nav invisible`} id="navbarsExample09">
                         <li className="nav-item ml-auto"><Link to="/">Início</Link></li>
+                        <li><Link to="/quemsomos">Quem Somos</Link></li>
                         <li><Link to="/servicos">Serviços</Link></li>
                         <li><Link to="/gerenciamento">Gerenciamento</Link></li>
                         <li><Link to="/contato">Contato</Link></li>
@@ -84,6 +85,7 @@ const Menu = () => {
                         <li className="nav-item ml-auto"><Link to="/">Início</Link></li>
                         <li><Link to="/servicos">Serviços</Link></li>
                         <li><Link to="/gerenciamento">Gerenciamento</Link></li>
+                        <li><Link to="/quemsomos">Quem Somos</Link></li>
                         <li><Link to="/contato">Contato</Link></li>
                     </div>
                 </animated.div>

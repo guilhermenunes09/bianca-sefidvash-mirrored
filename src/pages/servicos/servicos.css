@@ -1,0 +1,7 @@
+.white-box {
+    min-width: 700px;
+    max-width: 95vh;
+    background-color: white;
+    margin: 0 auto;
+    padding: 2em;
+}

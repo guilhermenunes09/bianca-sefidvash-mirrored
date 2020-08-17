@@ -53,17 +53,21 @@ const QuemSomos = () => {
 
     return (
             <div id="page" className="dark-mode" name="quemsomos">
+
+
+                  
                     
-                    <div className="text-center">
-                        <Title title={content.title} />
-                    </div>
+                    
 
                     <Fade delay={500}>
-                        <animated.div className="d-flex flex-row flex-wrap align-items-center justify-content-center">
-                            <div className="my-flex-item">
-                                <ImageSwiper photos={photos} />
+                        <animated.div className="no-border border-test d-flex flex-row flex-wrap align-items-center">
+                            <div className="my-flex-item quemsomos-background">
+                               
                             </div>
                             <div className="my-flex-item text">
+                                <div className="text-center">
+                                    <Title title={content.title} />
+                                </div>
                                 <p>O escritório <strong>Bianca Sefidvash Arquitetura + Interiores</strong>, comandado pela própria arquiteta na região de Campinas/SP. Sua principal área de atuação.</p>
                                 <p>Formada pela PUC, em Porto Alegre/RS, a arquiteta Bianca Sefidvash desenvolve projetos de <strong>Arquitetura Residencial</strong> e de <strong>Design de Interiores</strong> para clientes particulares e Corporativa, bem como atua na Gestão de Projetos e Administração de obra.</p>
                             </div>

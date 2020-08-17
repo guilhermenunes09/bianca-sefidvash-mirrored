@@ -3,6 +3,7 @@ import { Parallax, Background } from 'react-parallax';
 import ImgParallaxInteriores from '../imgs/parallax/parallax-interiores-1.jpg';
 import './imageParallax.css';
 import Gallery from './gallery.js';
+import Servicos from '../pages/servicos/servicos.js';
 
 function ImageParallax (props) {
     return(
@@ -12,12 +13,12 @@ function ImageParallax (props) {
                 bgImage={props.image ? props.image : ImgParallaxInteriores}
                 bgImageAlt="Background Parallax"
                 strength={-200}
-                
+                style={{marginTop:'-100px'}}
             >
                 {props.gallery && (
                     <div className="d-flex flex-row justify-content-center align-items-center" style={{ minHeight: '100vh', paddingTop: '2em', paddingBottom: '2em' }} >
-                        <div className="my-flex-item" style={{backgroundColor: 'white', width:'700px'}}>
-                            <Gallery />
+                        <div className="my-flex-item">
+                            <Servicos />
                         </div>
                     </div>
                 )}

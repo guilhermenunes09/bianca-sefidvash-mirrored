@@ -58,7 +58,7 @@ const Home = () => {
 
     //<Parallax />
     //<Parallax numberLines={2} x1={-1363} x2={270} y1={1619} translateX={277} rotate={18}/>
-
+    //<ServicosIcons />
 
     return(
         <>
@@ -77,7 +77,7 @@ const Home = () => {
 
             <Quemsomos />
             <Trajetoria />
-            <ServicosIcons />
+            
            
             <ImageParallax gallery />
             <Quote quotation={"A gente tem que sonhar, senão as coisas não acontecem."} author={"Oscar Niemeyer"}/>

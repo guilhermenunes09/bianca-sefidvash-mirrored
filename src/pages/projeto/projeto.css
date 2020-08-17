@@ -1,0 +1,15 @@
+
+.project-list {
+    list-style:none;    
+}
+
+li:before {
+    
+  content: counter(mynum) ". ";
+  counter-increment: mynum; 
+  font-weight: bold;
+}
+
+li::after {
+    content: " ";
+}
